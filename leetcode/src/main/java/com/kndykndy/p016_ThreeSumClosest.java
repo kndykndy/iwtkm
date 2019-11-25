@@ -1,3 +1,5 @@
+package main.java.com.kndykndy;
+
 import java.util.Arrays;
 
 /**

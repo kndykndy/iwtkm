@@ -1,4 +1,4 @@
-package support;
+package main.java.com.kndykndy.support;
 
 public class ListNode {
 

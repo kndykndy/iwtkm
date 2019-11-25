@@ -1,4 +1,6 @@
-import support.ListNode;
+package main.java.com.kndykndy;
+
+import main.java.com.kndykndy.support.ListNode;
 
 /**
  * Leetcode #206. Reverse Linked List

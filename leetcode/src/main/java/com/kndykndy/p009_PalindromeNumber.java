@@ -1,3 +1,5 @@
+package main.java.com.kndykndy;
+
 /**
  * Leetcode #9 ~ Palindrome Number
  * https://leetcode.com/problems/palindrome-number
