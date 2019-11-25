@@ -18,7 +18,7 @@ import java.util.Deque;
  * Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a
  * substring, "pwke" is a subsequence and not a substring.
  */
-public class p003_LengthOfLongestSubstring {
+public class p3_LengthOfLongestSubstring {
 
     @SuppressWarnings("WeakerAccess")
     private static class Solution {

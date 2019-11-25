@@ -19,7 +19,7 @@ import java.util.List;
  * Example 2:
  * nums1 = [1, 2], nums2 = [3, 4], the median is (2 + 3)/2 = 2.5
  */
-public class p004_FindMedianSortedArrays {
+public class p4_FindMedianSortedArrays {
 
     @SuppressWarnings("WeakerAccess")
     private static class Solution {

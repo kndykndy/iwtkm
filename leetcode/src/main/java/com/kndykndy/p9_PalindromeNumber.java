@@ -16,7 +16,7 @@ package main.java.com.kndykndy;
  * What if number is negative? No, it can't be, return false.
  * What is reversed number overflows? If it overflows it still must be checked.
  */
-public class p009_PalindromeNumber {
+public class p9_PalindromeNumber {
 
     @SuppressWarnings("WeakerAccess")
     private static class Solution {

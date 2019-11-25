@@ -21,7 +21,7 @@ import java.util.Set;
  * Given array S = [1, 0, -1, 0, -2, 2], and target = 0, a solution set is:
  * [ [-1,  0, 0, 1], [-2, -1, 1, 2], [-2,  0, 0, 2] ]
  */
-public class p018_FourSum {
+public class p18_FourSum {
 
     @SuppressWarnings("WeakerAccess")
     private static class Solution {

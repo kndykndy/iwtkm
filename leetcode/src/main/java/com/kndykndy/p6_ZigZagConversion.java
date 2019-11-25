@@ -20,7 +20,7 @@ import java.util.List;
  * Write the code that will take a string and make this conversion given a number of rows:
  * convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
  */
-public class p006_ZigZagConversion {
+public class p6_ZigZagConversion {
 
     interface Solution {
 

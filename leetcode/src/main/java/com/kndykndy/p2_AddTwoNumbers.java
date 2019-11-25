@@ -18,7 +18,7 @@ import main.java.com.kndykndy.support.ListNode;
  * Output: 7 -> 0 -> 8
  * Explanation: 342 + 465 = 807.
  */
-public class p002_AddTwoNumbers {
+public class p2_AddTwoNumbers {
 
     interface Solution {
 

@@ -21,7 +21,7 @@ import java.util.Map;
  * 2. Kind of selection sort -- pick up item, then choose a complement for it
  * 3. Pick up item, look if has complement in a specific hash table, if not, add.
  */
-public class p001_TwoSum {
+public class p1_TwoSum {
 
     interface Solution {
 

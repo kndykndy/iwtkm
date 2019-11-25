@@ -14,7 +14,7 @@ package main.java.com.kndykndy;
  * Input: "babad", output: "bab", note: "aba" is also a valid answer.
  * Input: "cbbd", output: "bb"
  */
-public class p005_LongestPalindrome {
+public class p5_LongestPalindrome {
 
     @SuppressWarnings("WeakerAccess")
     private static class Solution {

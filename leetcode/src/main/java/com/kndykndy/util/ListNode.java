@@ -1,4 +1,4 @@
-package main.java.com.kndykndy.support;
+package com.kndykndy.util;
 
 public class ListNode {
 
@@ -67,5 +67,4 @@ public class ListNode {
         sb.append(']');
         return sb.toString();
     }
-
 }

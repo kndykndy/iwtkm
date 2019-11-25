@@ -21,7 +21,7 @@ package main.java.com.kndykndy;
  * 2 -> 3*10+2  -> 32
  * 1 -> 32*10+1 -> 321
  */
-public class p007_ReverseInteger {
+public class p7_ReverseInteger {
 
     @SuppressWarnings("WeakerAccess")
     private static class Solution {
