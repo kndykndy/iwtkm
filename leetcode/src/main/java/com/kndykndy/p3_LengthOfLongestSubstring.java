@@ -1,4 +1,4 @@
-package main.java.com.kndykndy;
+package com.kndykndy;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

@@ -1,7 +1,7 @@
-package main.java.com.kndykndy;
+package com.kndykndy;
 
+import com.kndykndy.util.ListNode;
 import java.math.BigInteger;
-import main.java.com.kndykndy.support.ListNode;
 
 /**
  * Leetcode #2 ~ Add Two Numbers https://leetcode.com/problems/add-two-numbers

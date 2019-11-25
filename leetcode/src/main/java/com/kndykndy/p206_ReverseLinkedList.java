@@ -1,6 +1,6 @@
-package main.java.com.kndykndy;
+package com.kndykndy;
 
-import main.java.com.kndykndy.support.ListNode;
+import com.kndykndy.util.ListNode;
 
 /**
  * Leetcode #206. Reverse Linked List
@@ -21,7 +21,6 @@ public class p206_ReverseLinkedList {
     interface Solution {
 
         ListNode reverseList(ListNode head);
-
     }
 
     /**
