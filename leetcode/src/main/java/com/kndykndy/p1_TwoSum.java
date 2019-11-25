@@ -26,11 +26,9 @@ public class p1_TwoSum {
     interface Solution {
 
         int[] twoSum(int[] nums, int target);
-
     }
 
-    @SuppressWarnings("WeakerAccess")
-    private static class SolutionImpl1 implements Solution {
+    public static class Solution1 implements Solution {
 
         public int[] twoSum(int[] nums, int target) {
             if (nums == null || nums.length == 1) {
@@ -47,11 +45,9 @@ public class p1_TwoSum {
 
             return null;
         }
-
     }
 
-    @SuppressWarnings("WeakerAccess")
-    private static class SolutionImpl2 implements Solution {
+    public static class Solution2 implements Solution {
 
         public int[] twoSum(int[] nums, int target) {
             if (nums == null || nums.length == 1) {
@@ -73,45 +69,5 @@ public class p1_TwoSum {
 
             return null;
         }
-
     }
-
-    public static void main(String[] args) {
-        runTestSet(new SolutionImpl1());
-        runTestSet(new SolutionImpl2());
-    }
-
-    private static void runTestSet(Solution solution) {
-        int[] indexes;
-
-        indexes = solution.twoSum(null, 0);
-        assert indexes == null;
-
-        indexes = solution.twoSum(new int[]{0}, 0);
-        assert indexes == null;
-
-        indexes = solution.twoSum(new int[]{1, 2}, 2);
-        assert indexes == null;
-
-        indexes = solution.twoSum(new int[]{1, 2}, 3);
-        assert indexes != null;
-        assert indexes.length == 2;
-        assert indexes[0] == 0 && indexes[1] == 1;
-
-        indexes = solution.twoSum(new int[]{1, 2, 3, 4, 5}, 9);
-        assert indexes != null;
-        assert indexes.length == 2;
-        assert indexes[0] == 3 && indexes[1] == 4;
-
-        indexes = solution.twoSum(new int[]{4, 2, 3, 1, 5}, 9);
-        assert indexes != null;
-        assert indexes.length == 2;
-        assert indexes[0] == 0 && indexes[1] == 4;
-
-        indexes = solution.twoSum(new int[]{2, 7, 11, 15}, 9);
-        assert indexes != null;
-        assert indexes.length == 2;
-        assert indexes[0] == 0 && indexes[1] == 1;
-    }
-
 }
