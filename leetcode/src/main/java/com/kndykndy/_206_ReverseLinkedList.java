@@ -16,7 +16,7 @@ import com.kndykndy.util.ListNode;
  * Iterative: Increment head before manipulations with currentNode.
  * Recursive: Remember next position before recursive call.
  */
-public class _p206_ReverseLinkedList {
+public class _206_ReverseLinkedList {
 
     interface Solution {
 

@@ -21,7 +21,7 @@ import java.util.Set;
  * For array S = [-1, 0, 1, 2, -1, -4], a solution set is:
  * [ [-1, 0, 1], [-1, -1, 2] ]
  */
-public class _p15_ThreeSum {
+public class _15_ThreeSum {
 
     @SuppressWarnings("WeakerAccess")
     private static final class Solution {
