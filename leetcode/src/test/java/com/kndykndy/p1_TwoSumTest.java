@@ -5,9 +5,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-import com.kndykndy.p1_TwoSum.Solution;
-import com.kndykndy.p1_TwoSum.Solution1;
-import com.kndykndy.p1_TwoSum.Solution2;
+import com.kndykndy._p1_TwoSum.Solution;
+import com.kndykndy._p1_TwoSum.Solution1;
+import com.kndykndy._p1_TwoSum.Solution2;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;

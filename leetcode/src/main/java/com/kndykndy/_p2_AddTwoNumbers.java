@@ -18,7 +18,7 @@ import java.math.BigInteger;
  * Output: 7 -> 0 -> 8
  * Explanation: 342 + 465 = 807.
  */
-public class p2_AddTwoNumbers {
+public class _p2_AddTwoNumbers {
 
     interface Solution {
 
