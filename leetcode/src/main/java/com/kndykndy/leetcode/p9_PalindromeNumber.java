@@ -1,4 +1,4 @@
-package com.kndykndy;
+package com.kndykndy.leetcode;
 
 /**
  * Leetcode #9 ~ Palindrome Number

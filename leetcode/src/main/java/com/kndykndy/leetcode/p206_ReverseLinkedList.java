@@ -1,6 +1,6 @@
-package com.kndykndy;
+package com.kndykndy.leetcode;
 
-import com.kndykndy.util.ListNode;
+import com.kndykndy.leetcode.util.ListNode;
 
 /**
  * Leetcode #206. Reverse Linked List
@@ -46,7 +46,6 @@ public class p206_ReverseLinkedList {
 
             return currentNode;
         }
-
     }
 
     /**
@@ -67,25 +66,33 @@ public class p206_ReverseLinkedList {
 
             return newHead;
         }
-
     }
 
-    public static void main(String[] args) {
-        runTestSet(new Solution1());
-        runTestSet(new Solution2());
+    public static class Solution3 implements Solution {
+
+        @Override
+        public ListNode reverseList(ListNode head) {
+            if (head == null) {
+                return null;
+            }
+
+            ListNode currentNode = head;
+            ListNode nextNode;
+            ListNode newList = null;
+
+            while (currentNode != null) {
+                nextNode = currentNode.next;
+                if (newList != null) {
+                    currentNode.next = newList;
+                    newList = currentNode;
+                } else {
+                    newList = currentNode;
+                    newList.next = null;
+                }
+                currentNode = nextNode;
+            }
+
+            return newList;
+        }
     }
-
-    @SuppressWarnings("AssertWithSideEffects")
-    private static void runTestSet(Solution solution) {
-        ListNode sumListNode;
-
-        sumListNode = solution.reverseList(ListNode.fromValues(1, 2, 3, 4, 5));
-        assert sumListNode != null;
-        assert sumListNode.equals(ListNode.fromValues(5, 4, 3, 2, 1));
-
-        sumListNode = solution.reverseList(ListNode.fromValues(1, 2, 3, 4, 5));
-        assert sumListNode != null;
-        assert sumListNode.equals(ListNode.fromValues(5, 4, 3, 2, 1));
-    }
-
 }

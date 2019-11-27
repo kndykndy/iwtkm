@@ -1,4 +1,4 @@
-package com.kndykndy;
+package com.kndykndy.leetcode;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

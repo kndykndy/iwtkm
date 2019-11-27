@@ -1,6 +1,6 @@
-package com.kndykndy;
+package com.kndykndy.leetcode;
 
-import com.kndykndy.util.ListNode;
+import com.kndykndy.leetcode.util.ListNode;
 import java.math.BigInteger;
 
 /**

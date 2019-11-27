@@ -1,4 +1,4 @@
-package com.kndykndy.util;
+package com.kndykndy.leetcode.util;
 
 public class ListNode {
 

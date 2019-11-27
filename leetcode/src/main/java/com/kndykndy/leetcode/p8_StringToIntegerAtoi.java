@@ -1,4 +1,4 @@
-package com.kndykndy;
+package com.kndykndy.leetcode;
 
 /**
  * Leetcode #8 ~ String to Integer (atoi)

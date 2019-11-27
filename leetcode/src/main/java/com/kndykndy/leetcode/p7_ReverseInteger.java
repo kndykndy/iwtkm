@@ -1,4 +1,4 @@
-package com.kndykndy;
+package com.kndykndy.leetcode;
 
 /**
  * Leetcode #7 ~ Reverse Integer
