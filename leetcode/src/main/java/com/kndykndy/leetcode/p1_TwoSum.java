@@ -28,8 +28,12 @@ public class p1_TwoSum {
         int[] twoSum(int[] nums, int target);
     }
 
+    /**
+     * Brute force, time O(n^2), space O(1)
+     */
     public static class Solution1 implements Solution {
 
+        @Override
         public int[] twoSum(int[] nums, int target) {
             if (nums == null || nums.length == 1) {
                 return null;
@@ -47,8 +51,12 @@ public class p1_TwoSum {
         }
     }
 
+    /**
+     * Optimized, time O(n), space O(n)
+     */
     public static class Solution2 implements Solution {
 
+        @Override
         public int[] twoSum(int[] nums, int target) {
             if (nums == null || nums.length == 1) {
                 return null;
