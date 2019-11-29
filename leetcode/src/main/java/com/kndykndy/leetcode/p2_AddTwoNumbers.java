@@ -23,11 +23,11 @@ public class p2_AddTwoNumbers {
     interface Solution {
 
         ListNode addTwoNumbers(ListNode l1, ListNode l2);
-
     }
 
     public static class Solution1 implements Solution {
 
+        @Override
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             return bigIntToInvList(invListToBigInt(l1).add(invListToBigInt(l2)));
         }
@@ -75,6 +75,7 @@ public class p2_AddTwoNumbers {
 
     public static class Solution2 implements Solution {
 
+        @Override
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             if (l1 == null || l2 == null) {
                 return null;

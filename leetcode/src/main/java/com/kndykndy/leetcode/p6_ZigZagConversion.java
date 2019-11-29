@@ -25,7 +25,6 @@ public class p6_ZigZagConversion {
     interface Solution {
 
         String convert(String s, int numRows);
-
     }
 
     @SuppressWarnings("WeakerAccess")
