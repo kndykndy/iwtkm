@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import com.kndykndy.leetcode.p104_MaximumDepthBinaryTree.Solution;
 import com.kndykndy.leetcode.p104_MaximumDepthBinaryTree.Solution1;
 import com.kndykndy.leetcode.p104_MaximumDepthBinaryTree.Solution2;
+import com.kndykndy.leetcode.p104_MaximumDepthBinaryTree.Solution3;
 import com.kndykndy.leetcode.util.TreeNode;
 import java.util.Arrays;
 import java.util.List;
@@ -17,7 +18,7 @@ class p104_MaximumDepthBinaryTreeTest {
 
     @BeforeEach
     void setUp() {
-        solutions = Arrays.asList(new Solution1(), new Solution2());
+        solutions = Arrays.asList(new Solution1(), new Solution2(), new Solution3());
     }
 
     @Test

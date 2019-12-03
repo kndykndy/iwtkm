@@ -1,6 +1,10 @@
 package com.kndykndy.leetcode;
 
 import com.kndykndy.leetcode.util.TreeNode;
+import java.util.ArrayDeque;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 public class p104_MaximumDepthBinaryTree {
 
@@ -41,6 +45,9 @@ public class p104_MaximumDepthBinaryTree {
         }
     }
 
+    /**
+     * Time O(n), space O(k) (k is the depth of recursion).
+     */
     public static class Solution2 implements Solution {
 
         @Override
@@ -62,6 +69,49 @@ public class p104_MaximumDepthBinaryTree {
             }
 
             return Math.max(maxLeft, maxRight);
+        }
+    }
+
+    /**
+     * Time O(n), space O(m) (m is max nodes on same level).
+     */
+    public static class Solution3 implements Solution {
+
+        @Override
+        public int maxDepth(TreeNode root) {
+            if (root == null) {
+                return 0;
+            }
+
+            final Queue<TreeNode> nodeQueue = new ArrayDeque<>();
+            final List<TreeNode> nodes = new LinkedList<>();
+            TreeNode tempNode;
+            int maxDepth = 1;
+
+            nodeQueue.add(root);
+
+            while (true) {
+                while (!nodeQueue.isEmpty()) {
+                    tempNode = nodeQueue.poll();
+                    if (tempNode.left != null) {
+                        nodes.add(tempNode.left);
+                    }
+                    if (tempNode.right != null) {
+                        nodes.add(tempNode.right);
+                    }
+                }
+
+                if (nodes.isEmpty()) {
+                    break;
+                }
+
+                maxDepth++;
+
+                nodeQueue.addAll(nodes);
+                nodes.clear();
+            }
+
+            return maxDepth;
         }
     }
 }
