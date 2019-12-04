@@ -6,6 +6,7 @@ import com.kndykndy.leetcode.p104_MaximumDepthBinaryTree.Solution;
 import com.kndykndy.leetcode.p104_MaximumDepthBinaryTree.Solution1;
 import com.kndykndy.leetcode.p104_MaximumDepthBinaryTree.Solution2;
 import com.kndykndy.leetcode.p104_MaximumDepthBinaryTree.Solution3;
+import com.kndykndy.leetcode.p104_MaximumDepthBinaryTree.Solution4;
 import com.kndykndy.leetcode.util.TreeNode;
 import java.util.Arrays;
 import java.util.List;
@@ -18,13 +19,14 @@ class p104_MaximumDepthBinaryTreeTest {
 
     @BeforeEach
     void setUp() {
-        solutions = Arrays.asList(new Solution1(), new Solution2(), new Solution3());
+        solutions = Arrays.asList(
+            new Solution1(), new Solution2(), new Solution3(), new Solution4());
     }
 
     @Test
     void test1() {
         for (Solution solution : solutions) {
-            final TreeNode root = TreeNode.from(9, 3, 20);
+            final TreeNode root = TreeNode.from(3, 9, 20);
             TreeNode.add(root.right, 15, 7);
 
             assertEquals(3, solution.maxDepth(root));

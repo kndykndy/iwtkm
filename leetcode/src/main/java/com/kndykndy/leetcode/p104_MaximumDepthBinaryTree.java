@@ -114,4 +114,20 @@ public class p104_MaximumDepthBinaryTree {
             return maxDepth;
         }
     }
+
+    public static class Solution4 implements Solution {
+
+        @Override
+        public int maxDepth(TreeNode root) {
+            return root != null ?
+                Math.max(maxDepthImpl(root.left, 2), maxDepthImpl(root.right, 2))
+                : 0;
+        }
+
+        private int maxDepthImpl(TreeNode node, int level) {
+            return node != null
+                ? Math.max(maxDepthImpl(node.left, level + 1), maxDepthImpl(node.right, level + 1))
+                : level - 1;
+        }
+    }
 }

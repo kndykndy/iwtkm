@@ -10,15 +10,19 @@ public class TreeNode {
         val = x;
     }
 
-    public static TreeNode from(int left, int self, int right) {
+    public static TreeNode from(int self, Integer left, Integer right) {
         final TreeNode root = new TreeNode(self);
-        root.left = new TreeNode(left);
-        root.right = new TreeNode(right);
+        root.left = left != null ? new TreeNode(left) : null;
+        root.right = right != null ? new TreeNode(right) : null;
         return root;
     }
 
     public static void add(TreeNode node, int left, int right) {
         node.left = new TreeNode(left);
         node.right = new TreeNode(right);
+    }
+
+    public boolean isEqual(TreeNode tree) {
+        return false;
     }
 }
