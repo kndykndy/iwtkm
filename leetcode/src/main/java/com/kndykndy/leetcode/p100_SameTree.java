@@ -13,22 +13,19 @@ public class p100_SameTree {
 
         @Override
         public boolean isSameTree(TreeNode p, TreeNode q) {
-            if (p == null ^ q == null) {
-                return false;
-            }
-
             return isSameTreeImpl(p, q);
         }
 
         private boolean isSameTreeImpl(TreeNode p, TreeNode q) {
             if (p == q) {
                 return true;
-            }
-            if (p == null || q == null) {
+            } else if (p == null || q == null) {
                 return false;
+            } else {
+                return p.val == q.val &&
+                    isSameTreeImpl(p.left, q.left) &&
+                    isSameTreeImpl(p.right, q.right);
             }
-            return p.val == q.val && isSameTreeImpl(p.left, q.left) &&
-                isSameTreeImpl(q.right, q.right);
         }
     }
 }

@@ -120,17 +120,4 @@ public class p297_SerializeDeserializeBinaryTree {
             return root;
         }
     }
-
-    public static class Solution2 implements Solution {
-
-        @Override
-        public String serialize(TreeNode root) {
-            return null; // todo
-        }
-
-        @Override
-        public TreeNode deserialize(String data) {
-            return null; // todo
-        }
-    }
 }
