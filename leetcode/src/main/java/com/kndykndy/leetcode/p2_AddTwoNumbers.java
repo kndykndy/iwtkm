@@ -25,7 +25,7 @@ public class p2_AddTwoNumbers {
         ListNode addTwoNumbers(ListNode l1, ListNode l2);
     }
 
-    public static class Solution1 implements Solution {
+    public static class BruteForceSolution implements Solution {
 
         @Override
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -70,7 +70,6 @@ public class p2_AddTwoNumbers {
 
             return result;
         }
-
     }
 
     public static class Solution2 implements Solution {
@@ -119,69 +118,5 @@ public class p2_AddTwoNumbers {
 
             return result;
         }
-
     }
-
-    public static void main(String[] args) {
-        runTestSet(new Solution1());
-        runTestSet(new Solution2());
-    }
-
-    @SuppressWarnings("AssertWithSideEffects")
-    private static void runTestSet(Solution solution) {
-        ListNode sumListNode;
-
-        sumListNode = solution
-            .addTwoNumbers(ListNode.fromValues(2, 4, 3), ListNode.fromValues(5, 6, 4));
-        assert sumListNode != null;
-        assert sumListNode.equals(ListNode.fromValues(7, 0, 8));
-
-        sumListNode = solution
-            .addTwoNumbers(ListNode.fromValues(0), ListNode.fromValues(0));
-        assert sumListNode != null;
-        assert sumListNode.equals(ListNode.fromValues(0));
-
-        sumListNode = solution.addTwoNumbers(
-            ListNode.fromValues(9),
-            ListNode.fromValues(1, 9, 9, 9, 9, 9, 9, 9, 9, 9));
-        assert sumListNode != null;
-        assert sumListNode.equals(ListNode.fromValues(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1));
-
-        sumListNode = solution
-            .addTwoNumbers(ListNode.fromValues(2, 4, 3), ListNode.fromValues(5, 6, 4));
-        assert sumListNode != null;
-        assert sumListNode.equals(ListNode.fromValues(7, 0, 8));
-
-        sumListNode = solution.addTwoNumbers(ListNode.fromValues(0), ListNode.fromValues(0));
-        assert sumListNode != null;
-        assert sumListNode.equals(ListNode.fromValues(0));
-
-        sumListNode = solution.addTwoNumbers(
-            ListNode.fromValues(9),
-            ListNode.fromValues(1, 9, 9, 9, 9, 9, 9, 9, 9, 9));
-        assert sumListNode != null;
-        assert sumListNode.equals(ListNode.fromValues(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1));
-
-        /*
-         * (1) + (1->2->3) = (2->2->3)
-         */
-        sumListNode = solution.addTwoNumbers(ListNode.fromValues(1), ListNode.fromValues(1, 2, 3));
-        assert sumListNode != null;
-        assert sumListNode.equals(ListNode.fromValues(2, 2, 3));
-
-        /*
-         * (1->2->3) + (9) = (0->3->3)
-         */
-        sumListNode = solution.addTwoNumbers(ListNode.fromValues(1, 2, 3), ListNode.fromValues(9));
-        assert sumListNode != null;
-        assert sumListNode.equals(ListNode.fromValues(0, 3, 3));
-
-        /*
-         * (5) + (5) = (0->1)
-         */
-        sumListNode = solution.addTwoNumbers(ListNode.fromValues(5), ListNode.fromValues(5));
-        assert sumListNode != null;
-        assert sumListNode.equals(ListNode.fromValues(0, 1));
-    }
-
 }

@@ -31,7 +31,7 @@ public class p1_TwoSum {
     /**
      * Brute force, time O(n^2), space O(1)
      */
-    public static class Solution1 implements Solution {
+    public static class BruteForceSolution implements Solution {
 
         @Override
         public int[] twoSum(int[] nums, int target) {

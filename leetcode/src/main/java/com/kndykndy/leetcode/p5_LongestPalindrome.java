@@ -16,9 +16,14 @@ package com.kndykndy.leetcode;
  */
 public class p5_LongestPalindrome {
 
-    @SuppressWarnings("WeakerAccess")
-    private static class Solution {
+    interface Solution {
 
+        String longestPalindrome(String s);
+    }
+
+    public static class BruteForceSolution implements Solution {
+
+        @Override
         public String longestPalindrome(String s) {
             if (s == null || "".equals(s)) {
                 return "";
@@ -59,7 +64,7 @@ public class p5_LongestPalindrome {
             return s.substring(pivotCharIdx - i, pivotCharIdx + i + 1);
         }
 
-        public static String evenPalindrome(String s, int pivotCharIdx) {
+        private static String evenPalindrome(String s, int pivotCharIdx) {
             if (s == null || "".equals(s) || s.length() < 2) {
                 return null;
             }
@@ -81,43 +86,30 @@ public class p5_LongestPalindrome {
 
             return s.substring(pivotCharIdx - i, pivotCharIdx + 1 + i + 1);
         }
-
     }
 
-    @SuppressWarnings("AssertWithSideEffects")
     public static void main(String[] args) {
         // test odd palindrome
-
-        assert Solution.oddPalindrome(null, 0) == null;
-        assert Solution.oddPalindrome("", 0) == null;
-        assert "b".equals(Solution.oddPalindrome("b", 0));
-        assert "b".equals(Solution.oddPalindrome("ba", 0));
-        assert "a".equals(Solution.oddPalindrome("ba", 1));
-        assert "bab".equals(Solution.oddPalindrome("bab", 1));
-        assert "bab".equals(Solution.oddPalindrome("baba", 1));
-        assert "aba".equals(Solution.oddPalindrome("baba", 2));
-        assert "babab".equals(Solution.oddPalindrome("babab", 2));
-        assert "aba".equals(Solution.oddPalindrome("babad", 2));
+        assert BruteForceSolution.oddPalindrome(null, 0) == null;
+        assert BruteForceSolution.oddPalindrome("", 0) == null;
+        assert "b".equals(BruteForceSolution.oddPalindrome("b", 0));
+        assert "b".equals(BruteForceSolution.oddPalindrome("ba", 0));
+        assert "a".equals(BruteForceSolution.oddPalindrome("ba", 1));
+        assert "bab".equals(BruteForceSolution.oddPalindrome("bab", 1));
+        assert "bab".equals(BruteForceSolution.oddPalindrome("baba", 1));
+        assert "aba".equals(BruteForceSolution.oddPalindrome("baba", 2));
+        assert "babab".equals(BruteForceSolution.oddPalindrome("babab", 2));
+        assert "aba".equals(BruteForceSolution.oddPalindrome("babad", 2));
 
         // test even palindrome
-
-        assert Solution.evenPalindrome(null, 0) == null;
-        assert Solution.evenPalindrome("", 0) == null;
-        assert Solution.evenPalindrome("l", 0) == null;
-        assert Solution.evenPalindrome("lc", 0) == null;
-        assert Solution.evenPalindrome("lcc", 0) == null;
-        assert "cc".equals(Solution.evenPalindrome("lcc", 1));
-        assert Solution.evenPalindrome("lccl", 0) == null;
-        assert "lccl".equals(Solution.evenPalindrome("lccl", 1));
-        assert "cc".equals(Solution.evenPalindrome("lccb", 1));
-
-        // test palindrome lengths
-
-        assert "".equals(new Solution().longestPalindrome(""));
-        assert "c".equals(new Solution().longestPalindrome("c"));
-        assert "cac".equals(new Solution().longestPalindrome("cac"));
-        assert "bab".equals(new Solution().longestPalindrome("babad"));
-        assert "bb".equals(new Solution().longestPalindrome("cbbd"));
+        assert BruteForceSolution.evenPalindrome(null, 0) == null;
+        assert BruteForceSolution.evenPalindrome("", 0) == null;
+        assert BruteForceSolution.evenPalindrome("l", 0) == null;
+        assert BruteForceSolution.evenPalindrome("lc", 0) == null;
+        assert BruteForceSolution.evenPalindrome("lcc", 0) == null;
+        assert "cc".equals(BruteForceSolution.evenPalindrome("lcc", 1));
+        assert BruteForceSolution.evenPalindrome("lccl", 0) == null;
+        assert "lccl".equals(BruteForceSolution.evenPalindrome("lccl", 1));
+        assert "cc".equals(BruteForceSolution.evenPalindrome("lccb", 1));
     }
-
 }

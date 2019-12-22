@@ -56,6 +56,18 @@ public class ListNode {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        return equals((ListNode) o);
+    }
+
+    @Override
     public String toString() {
         ListNode node = this;
         final StringBuilder sb = new StringBuilder();

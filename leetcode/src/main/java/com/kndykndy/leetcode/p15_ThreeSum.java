@@ -23,34 +23,14 @@ import java.util.Set;
  */
 public class p15_ThreeSum {
 
-    @SuppressWarnings("WeakerAccess")
-    private static final class Solution {
+    interface Solution {
 
-        public void wrapperForThreeSum(int[] nums) {
-            System.out.print("Case for " + Arrays.toString(nums));
-            Arrays.sort(nums);
-            System.out.print(", sorted " + Arrays.toString(nums) + "\n");
+        List<List<Integer>> threeSum(int[] nums);
+    }
 
-            final long l = System.currentTimeMillis();
+    public static final class Solution1 implements Solution {
 
-            final List<List<Integer>> result = threeSum(nums);
-            System.out.print("Result: ");
-            System.out.print("[");
-            result.forEach(r ->
-                System.out.print("[" + r.get(0) + "," + r.get(1) + "," + r.get(2) + "],"));
-            System.out.print("]");
-
-            System.out.print(", took " + (System.currentTimeMillis() - l) + "ms\n");
-            System.out.println();
-        }
-
-        @SuppressWarnings("unused")
-        private void debugPrint(String p, int[] n, int i1, int i2, int i3) {
-            System.out.println(p
-                + " " + i1 + " " + i2 + " " + i3
-                + ": " + n[i1] + " " + n[i2] + " " + n[i3]);
-        }
-
+        @Override
         public List<List<Integer>> threeSum(int[] nums) {
             if (nums == null || nums.length < 3) {
                 return new ArrayList<>();
@@ -87,14 +67,38 @@ public class p15_ThreeSum {
             return new ArrayList<>(result);
         }
 
+        private void wrapperForThreeSum(int[] nums) {
+            System.out.print("Case for " + Arrays.toString(nums));
+            Arrays.sort(nums);
+            System.out.print(", sorted " + Arrays.toString(nums) + "\n");
+
+            final long l = System.currentTimeMillis();
+
+            final List<List<Integer>> result = threeSum(nums);
+            System.out.print("Result: ");
+            System.out.print("[");
+            result.forEach(r ->
+                System.out.print("[" + r.get(0) + "," + r.get(1) + "," + r.get(2) + "],"));
+            System.out.print("]");
+
+            System.out.print(", took " + (System.currentTimeMillis() - l) + "ms\n");
+            System.out.println();
+        }
+
+        @SuppressWarnings("unused")
+        private void debugPrint(String p, int[] n, int i1, int i2, int i3) {
+            System.out.println(p
+                + " " + i1 + " " + i2 + " " + i3
+                + ": " + n[i1] + " " + n[i2] + " " + n[i3]);
+        }
     }
 
     public static void main(String[] args) {
-        new Solution().wrapperForThreeSum(new int[]{0, 0, 0});
+        new Solution1().wrapperForThreeSum(new int[]{0, 0, 0});
 
-        new Solution().wrapperForThreeSum(new int[]{0, 0, 0, 0});
+        new Solution1().wrapperForThreeSum(new int[]{0, 0, 0, 0});
 
-        new Solution().wrapperForThreeSum(new int[]{-1, 0, 1, 2, -1, -4});
+        new Solution1().wrapperForThreeSum(new int[]{-1, 0, 1, 2, -1, -4});
 
         /*
          * -4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6
@@ -102,7 +106,7 @@ public class p15_ThreeSum {
          *      ^   ^                              ^
          *              ^  ^     ^
          */
-        new Solution().wrapperForThreeSum(
+        new Solution1().wrapperForThreeSum(
             new int[]{-4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6});
 
         /*
@@ -111,20 +115,20 @@ public class p15_ThreeSum {
          *   ^    ^   ^
          *      ^ ^ ^
          */
-        new Solution().wrapperForThreeSum(new int[]{3, 0, -2, -1, 1, 2});
+        new Solution1().wrapperForThreeSum(new int[]{3, 0, -2, -1, 1, 2});
 
         /*
          * -2 0 1 1 2
          *  ^ ^     ^
          *  ^   ^ ^
          */
-        new Solution().wrapperForThreeSum(new int[]{-2, 0, 1, 1, 2});
+        new Solution1().wrapperForThreeSum(new int[]{-2, 0, 1, 1, 2});
 
-        new Solution().wrapperForThreeSum(
+        new Solution1().wrapperForThreeSum(
             new int[]{-4, -2, 1, -5, -4, -4, 4, -2, 0, 4, 0, -2, 3, 1, -5, 0});
 
         // do not know answer thou
-        new Solution().wrapperForThreeSum(
+        new Solution1().wrapperForThreeSum(
             new int[]{82597, -9243, 62390, 83030, -97960, -26521, -61011, 83390,
                 -38677, 12333, 75987, 46091, 83794, 19355, -71037, -6242, -28801, 324, 1202, -90885,
                 -2989, -95597, -34333, 35528, 5680, 89093, -90606, 50360, -29393, -27012, 53313,
@@ -329,5 +333,4 @@ public class p15_ThreeSum {
                 -14388, -22258, -46417, -48285, 18242, -77551, 82620, 250, -20060, -79568, -77259,
                 82052, -98897, -75464, 48773});
     }
-
 }

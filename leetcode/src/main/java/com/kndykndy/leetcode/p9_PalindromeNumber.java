@@ -18,9 +18,14 @@ package com.kndykndy.leetcode;
  */
 public class p9_PalindromeNumber {
 
-    @SuppressWarnings("WeakerAccess")
-    private static class Solution {
+    interface Solution {
 
+        boolean isPalindrome(int x);
+    }
+
+    public static class Solution1 implements Solution {
+
+        @Override
         public boolean isPalindrome(int x) {
             if (x < 0) {
                 return false;
@@ -43,24 +48,7 @@ public class p9_PalindromeNumber {
                 }
             }
 
-            return result <= Integer.MAX_VALUE && result == x;
+            return result == x;
         }
-
     }
-
-    public static void main(String[] args) {
-        assert !new Solution().isPalindrome(-1);
-        assert !new Solution().isPalindrome(-111);
-        assert !new Solution().isPalindrome(10);
-        assert !new Solution().isPalindrome(122);
-
-        assert new Solution().isPalindrome(0);
-        assert new Solution().isPalindrome(11);
-        assert new Solution().isPalindrome(222);
-        assert new Solution().isPalindrome(3113);
-        assert new Solution().isPalindrome(12321);
-        assert new Solution().isPalindrome(999999999);
-        assert new Solution().isPalindrome(2147447412);
-    }
-
 }

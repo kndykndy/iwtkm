@@ -21,9 +21,14 @@ import java.util.List;
  */
 public class p4_FindMedianSortedArrays {
 
-    @SuppressWarnings("WeakerAccess")
-    private static class Solution {
+    interface Solution {
 
+        double findMedianSortedArrays(int[] nums1, int[] nums2);
+    }
+
+    public static class BruteForceSolution implements Solution {
+
+        @Override
         public double findMedianSortedArrays(int[] nums1, int[] nums2) {
             final List<Integer> mergedArray = new ArrayList<>();
             Arrays.stream(nums1).forEach(mergedArray::add);
@@ -38,17 +43,5 @@ public class p4_FindMedianSortedArrays {
                 return mergedArray.get(mergedArraySize / 2);
             }
         }
-
     }
-
-    @SuppressWarnings("AssertWithSideEffects")
-    public static void main(String[] args) {
-        final Solution solution = new Solution();
-
-        assert solution.findMedianSortedArrays(new int[]{1, 3}, new int[]{2}) == 2.0;
-        assert solution.findMedianSortedArrays(new int[]{1, 2}, new int[]{3, 4}) == 2.5;
-
-        assert solution.findMedianSortedArrays(new int[]{1, 1}, new int[]{1, 2}) == 1.0;
-    }
-
 }

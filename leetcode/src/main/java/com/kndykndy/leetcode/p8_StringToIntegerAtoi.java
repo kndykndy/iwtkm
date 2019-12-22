@@ -28,9 +28,14 @@ package com.kndykndy.leetcode;
  */
 public class p8_StringToIntegerAtoi {
 
-    @SuppressWarnings("WeakerAccess")
-    private static class Solution {
+    interface Solution {
 
+        int myAtoi(String str);
+    }
+
+    public static class Solution1 implements Solution {
+
+        @Override
         public int myAtoi(String str) {
             if (str == null || "".equals(str.trim())) {
                 return 0;
@@ -86,30 +91,5 @@ public class p8_StringToIntegerAtoi {
 
             return (int) result;
         }
-
     }
-
-    public static void main(String[] args) {
-        assert new Solution().myAtoi(null) == 0;
-        assert new Solution().myAtoi("") == 0;
-        assert new Solution().myAtoi("  lol") == 0;
-        assert new Solution().myAtoi("  -lol") == 0;
-        assert new Solution().myAtoi("  +lol") == 0;
-        assert new Solution().myAtoi("  lol1") == 0;
-
-        assert new Solution().myAtoi("  1  ") == 1;
-        assert new Solution().myAtoi("  1") == 1;
-        assert new Solution().myAtoi("  +1 ") == 1;
-        assert new Solution().myAtoi("  -1 ") == -1;
-        assert new Solution().myAtoi("  -1lol") == -1;
-        assert new Solution().myAtoi("  -123lol") == -123;
-        assert new Solution().myAtoi("    10522545459") == 2147483647;
-        assert new Solution().myAtoi("9223372036854775809") == 2147483647;
-
-        assert new Solution().myAtoi("2147483647") == 2147483647;
-        assert new Solution().myAtoi("2147483648") == 2147483647;
-        assert new Solution().myAtoi("-2147483648") == -2147483648;
-        assert new Solution().myAtoi("-2147483649") == -2147483648;
-    }
-
 }

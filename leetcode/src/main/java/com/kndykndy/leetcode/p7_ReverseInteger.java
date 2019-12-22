@@ -23,9 +23,14 @@ package com.kndykndy.leetcode;
  */
 public class p7_ReverseInteger {
 
-    @SuppressWarnings("WeakerAccess")
-    private static class Solution {
+    interface Solution {
 
+        int reverse(int x);
+    }
+
+    public static class Solution1 implements Solution {
+
+        @Override
         public int reverse(int x) {
             long result = 0;
 
@@ -48,17 +53,5 @@ public class p7_ReverseInteger {
 
             return (int) result;
         }
-
     }
-
-    public static void main(String[] args) {
-        assert new Solution().reverse(Integer.MAX_VALUE) == 0;
-        assert new Solution().reverse(-Integer.MAX_VALUE) == 0;
-        assert new Solution().reverse(Integer.MIN_VALUE) == 0;
-
-        assert new Solution().reverse(123) == 321;
-        assert new Solution().reverse(-123) == -321;
-        assert new Solution().reverse(120) == 21;
-    }
-
 }

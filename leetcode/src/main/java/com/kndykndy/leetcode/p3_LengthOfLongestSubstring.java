@@ -20,9 +20,14 @@ import java.util.Deque;
  */
 public class p3_LengthOfLongestSubstring {
 
-    @SuppressWarnings("WeakerAccess")
-    private static class Solution {
+    interface Solution {
 
+        int lengthOfLongestSubstring(String s);
+    }
+
+    public static class Solution1 implements Solution {
+
+        @Override
         public int lengthOfLongestSubstring(String s) {
             if (s == null || "".equals(s.trim())) {
                 return 0;
@@ -61,19 +66,4 @@ public class p3_LengthOfLongestSubstring {
         }
 
     }
-
-    @SuppressWarnings("AssertWithSideEffects")
-    public static void main(String[] args) {
-        assert new Solution().lengthOfLongestSubstring("") == 0;
-        assert new Solution().lengthOfLongestSubstring("c") == 1;
-
-        assert new Solution().lengthOfLongestSubstring("abcabcbb") == 3;
-
-        assert new Solution().lengthOfLongestSubstring("bbbbb") == 1;
-
-        assert new Solution().lengthOfLongestSubstring("pwwkew") == 3;
-
-        assert new Solution().lengthOfLongestSubstring("dvdf") == 3;
-    }
-
 }

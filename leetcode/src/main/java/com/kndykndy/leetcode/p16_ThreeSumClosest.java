@@ -19,32 +19,14 @@ import java.util.Arrays;
  */
 public class p16_ThreeSumClosest {
 
-    @SuppressWarnings("WeakerAccess")
-    private static final class Solution {
+    interface Solution {
 
-        int wrapperForThreeSumClosest(int[] nums, int target) {
-            System.out.print("Case for " + Arrays.toString(nums) + ", target " + target);
-            Arrays.sort(nums);
-            System.out.print(", sorted " + Arrays.toString(nums) + "\n");
+        int threeSumClosest(int[] nums, int target);
+    }
 
-            final long l = System.currentTimeMillis();
+    public static final class Solution1 implements Solution {
 
-            final int result = threeSumClosest(nums, target);
-
-            System.out.println("Result: " + result + ""
-                + ", took " + (System.currentTimeMillis() - l) + "ms\n");
-
-            return result;
-        }
-
-        @SuppressWarnings("unused")
-        private void debugPrint(String p, int[] n, int i1, int i2, int i3) {
-            System.out.println(p
-                + " " + i1 + " " + i2 + " " + i3
-                + ": " + n[i1] + " " + n[i2] + " " + n[i3]
-                + ", sum: " + (n[i1] + n[i2] + n[i3]));
-        }
-
+        @Override
         public int threeSumClosest(int[] nums, int target) {
             if (nums == null || nums.length < 3) {
                 return 0;
@@ -85,21 +67,42 @@ public class p16_ThreeSumClosest {
             return result != null ? result : 0;
         }
 
+        private int wrapperForThreeSumClosest(int[] nums, int target) {
+            System.out.print("Case for " + Arrays.toString(nums) + ", target " + target);
+            Arrays.sort(nums);
+            System.out.print(", sorted " + Arrays.toString(nums) + "\n");
+
+            final long l = System.currentTimeMillis();
+
+            final int result = threeSumClosest(nums, target);
+
+            System.out.println("Result: " + result + ""
+                + ", took " + (System.currentTimeMillis() - l) + "ms\n");
+
+            return result;
+        }
+
+        @SuppressWarnings("unused")
+        private void debugPrint(String p, int[] n, int i1, int i2, int i3) {
+            System.out.println(p
+                + " " + i1 + " " + i2 + " " + i3
+                + ": " + n[i1] + " " + n[i2] + " " + n[i3]
+                + ", sum: " + (n[i1] + n[i2] + n[i3]));
+        }
     }
 
     public static void main(String[] args) {
-        assert new Solution().wrapperForThreeSumClosest(new int[]{0, 0, 0}, 1) == 0;
-        assert new Solution().wrapperForThreeSumClosest(new int[]{0, 0, 0, 0}, 1) == 0;
-        assert new Solution().wrapperForThreeSumClosest(new int[]{-1, 0, 1, 2, -1, -4}, 3) == 3;
+        assert new Solution1().wrapperForThreeSumClosest(new int[]{0, 0, 0}, 1) == 0;
+        assert new Solution1().wrapperForThreeSumClosest(new int[]{0, 0, 0, 0}, 1) == 0;
+        assert new Solution1().wrapperForThreeSumClosest(new int[]{-1, 0, 1, 2, -1, -4}, 3) == 3;
 
-        assert new Solution().wrapperForThreeSumClosest(new int[]{-1, 2, 1, -4}, 1) == 2;
-        assert new Solution().wrapperForThreeSumClosest(new int[]{-4, -1, 1, 2}, 5) == 2;
-        assert new Solution().wrapperForThreeSumClosest(new int[]{-4, -1, 1, 2, 3}, 5) == 4;
-        assert new Solution().wrapperForThreeSumClosest(new int[]{-4, -1, 1, 2, 3}, 1) == 1;
+        assert new Solution1().wrapperForThreeSumClosest(new int[]{-1, 2, 1, -4}, 1) == 2;
+        assert new Solution1().wrapperForThreeSumClosest(new int[]{-4, -1, 1, 2}, 5) == 2;
+        assert new Solution1().wrapperForThreeSumClosest(new int[]{-4, -1, 1, 2, 3}, 5) == 4;
+        assert new Solution1().wrapperForThreeSumClosest(new int[]{-4, -1, 1, 2, 3}, 1) == 1;
 
-        assert new Solution().wrapperForThreeSumClosest(new int[]{-4, -1, 1, 2, 3}, -1) == -1;
-        assert new Solution().wrapperForThreeSumClosest(new int[]{-4, -1, 1, 2, 3}, -4) == -4;
-        assert new Solution().wrapperForThreeSumClosest(new int[]{-4, -1, 1, 2, 3}, -5) == -4;
+        assert new Solution1().wrapperForThreeSumClosest(new int[]{-4, -1, 1, 2, 3}, -1) == -1;
+        assert new Solution1().wrapperForThreeSumClosest(new int[]{-4, -1, 1, 2, 3}, -4) == -4;
+        assert new Solution1().wrapperForThreeSumClosest(new int[]{-4, -1, 1, 2, 3}, -5) == -4;
     }
-
 }

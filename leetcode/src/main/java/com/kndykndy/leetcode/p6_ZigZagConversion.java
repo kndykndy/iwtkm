@@ -27,8 +27,7 @@ public class p6_ZigZagConversion {
         String convert(String s, int numRows);
     }
 
-    @SuppressWarnings("WeakerAccess")
-    private static class Solution1 implements Solution {
+    public static class Solution1 implements Solution {
 
         /**
          * Open questions and assumptions:
@@ -113,23 +112,21 @@ public class p6_ZigZagConversion {
         /**
          * Amount of chars above the pair of chars within this row.
          */
-        public static int upperCharsCntForRow(int rowNum) {
+        private static int upperCharsCntForRow(int rowNum) {
             return (rowNum > 1) ? (1 + (rowNum - 1) * 2) : rowNum;
         }
 
         /**
          * Amount of chars below between chars of this row.
          */
-        public static int lowerCharsCntForRow(int rowNum, int rowsCnt) {
+        private static int lowerCharsCntForRow(int rowNum, int rowsCnt) {
             return (rowNum < rowsCnt - 2)
                 ? (1 + (rowsCnt - 2 - rowNum) * 2)
                 : (rowNum == rowsCnt - 2 ? 1 : 0);
         }
-
     }
 
-    @SuppressWarnings("WeakerAccess")
-    private static class Solution2 implements Solution {
+    public static class Solution2 implements Solution {
 
         @Override
         public String convert(String s, int numRows) {
@@ -185,7 +182,6 @@ public class p6_ZigZagConversion {
 
             return new String(tC);
         }
-
     }
 
     public static void main(String[] args) {
@@ -224,22 +220,5 @@ public class p6_ZigZagConversion {
         assert Solution1.lowerCharsCntForRow(2, 5) == 3;
         assert Solution1.lowerCharsCntForRow(3, 5) == 1;
         assert Solution1.lowerCharsCntForRow(4, 5) == 0;
-
-        runTestSet(new Solution1());
-        runTestSet(new Solution2());
     }
-
-    private static void runTestSet(final Solution solution) {
-        assert solution.convert(null, 0) == null;
-        assert solution.convert("whatever", 0) == null;
-        assert "".equals(solution.convert("", 1));
-        assert "a".equals(solution.convert("a", 1));
-
-        assert "PYAAPL".equals(solution.convert("PAYPAL", 2));
-        assert "PAHNAPLSIIGYIR".equals(solution.convert("PAYPALISHIRING", 3));
-        assert "KLBNOOAMDLMRBYYL".equals(solution.convert("KNDYLOLOMYRABMBL", 4));
-        assert "KDKNNYYNDKKDDYNY".equals(solution.convert("KNDYKNDYKNDYKNDY", 4));
-        assert "ABFCED".equals(solution.convert("ABCDEF", 4));
-    }
-
 }

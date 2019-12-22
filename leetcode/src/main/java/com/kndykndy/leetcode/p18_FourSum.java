@@ -23,36 +23,14 @@ import java.util.Set;
  */
 public class p18_FourSum {
 
-    @SuppressWarnings("WeakerAccess")
-    private static class Solution {
+    interface Solution {
 
-        public void wrapperForFourSum(int[] nums, int target) {
-            System.out.print("Case for " + Arrays.toString(nums) + ", target " + target);
-            Arrays.sort(nums);
-            System.out.print(", sorted " + Arrays.toString(nums) + "\n");
+        List<List<Integer>> fourSum(int[] nums, int target);
+    }
 
-            final long l = System.currentTimeMillis();
+    public static class Solution1 implements Solution {
 
-            final List<List<Integer>> result = fourSum(nums, target);
-            System.out.print("Result: ");
-            System.out.print("[");
-            result.forEach(r ->
-                System.out.print(
-                    "[" + r.get(0) + "," + r.get(1) + "," + r.get(2) + "," + r.get(3) + "],"));
-            System.out.print("]");
-
-            System.out.print(", took " + (System.currentTimeMillis() - l) + "ms\n");
-            System.out.println();
-        }
-
-        @SuppressWarnings("unused")
-        private void debugPrint(int[] n, int i0, int i1, int i2, int i3) {
-            System.out.println(
-                i0 + " " + i1 + " " + i2 + " " + i3
-                    + ": " + n[i0] + " " + n[i1] + " " + n[i2] + " " + n[i3]
-                    + ", sum: " + (n[i0] + n[i1] + n[i2] + n[i3]));
-        }
-
+        @Override
         public List<List<Integer>> fourSum(int[] nums, int target) {
             if (nums == null || nums.length < 4) {
                 return new ArrayList<>();
@@ -97,10 +75,35 @@ public class p18_FourSum {
             return new ArrayList<>(result);
         }
 
+        private void wrapperForFourSum(int[] nums, int target) {
+            System.out.print("Case for " + Arrays.toString(nums) + ", target " + target);
+            Arrays.sort(nums);
+            System.out.print(", sorted " + Arrays.toString(nums) + "\n");
+
+            final long l = System.currentTimeMillis();
+
+            final List<List<Integer>> result = fourSum(nums, target);
+            System.out.print("Result: ");
+            System.out.print("[");
+            result.forEach(r ->
+                System.out.print(
+                    "[" + r.get(0) + "," + r.get(1) + "," + r.get(2) + "," + r.get(3) + "],"));
+            System.out.print("]");
+
+            System.out.print(", took " + (System.currentTimeMillis() - l) + "ms\n");
+            System.out.println();
+        }
+
+        @SuppressWarnings("unused")
+        private void debugPrint(int[] n, int i0, int i1, int i2, int i3) {
+            System.out.println(
+                i0 + " " + i1 + " " + i2 + " " + i3
+                    + ": " + n[i0] + " " + n[i1] + " " + n[i2] + " " + n[i3]
+                    + ", sum: " + (n[i0] + n[i1] + n[i2] + n[i3]));
+        }
     }
 
     public static void main(String[] args) {
-        new Solution().wrapperForFourSum(new int[]{1, 0, -1, 0, -2, 2}, 0);
+        new Solution1().wrapperForFourSum(new int[]{1, 0, -1, 0, -2, 2}, 0);
     }
-
 }
