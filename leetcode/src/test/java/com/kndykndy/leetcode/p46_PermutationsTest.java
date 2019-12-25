@@ -1,6 +1,7 @@
 package com.kndykndy.leetcode;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.kndykndy.leetcode.p46_Permutations.Solution;
 import com.kndykndy.leetcode.p46_Permutations.Solution1;
@@ -22,14 +23,14 @@ class p46_PermutationsTest {
     @Test
     void test1() {
         for (Solution solution : solutions) {
-            List<List<Integer>> result;
-            result = solution.permute(new int[]{1, 2, 3});
-            assertEquals(Arrays.asList(1, 2, 3), result.get(0));
-            assertEquals(Arrays.asList(1, 3, 2), result.get(1));
-            assertEquals(Arrays.asList(2, 1, 3), result.get(2));
-            assertEquals(Arrays.asList(2, 3, 1), result.get(3));
-            assertEquals(Arrays.asList(3, 2, 1), result.get(4));
-            assertEquals(Arrays.asList(3, 1, 2), result.get(5));
+            final List<List<Integer>> result = solution.permute(new int[]{1, 2, 3});
+            assertEquals(6, result.size());
+            assertTrue(result.contains(Arrays.asList(1, 2, 3)));
+            assertTrue(result.contains(Arrays.asList(1, 3, 2)));
+            assertTrue(result.contains(Arrays.asList(2, 1, 3)));
+            assertTrue(result.contains(Arrays.asList(2, 3, 1)));
+            assertTrue(result.contains(Arrays.asList(3, 2, 1)));
+            assertTrue(result.contains(Arrays.asList(3, 1, 2)));
         }
     }
 }
