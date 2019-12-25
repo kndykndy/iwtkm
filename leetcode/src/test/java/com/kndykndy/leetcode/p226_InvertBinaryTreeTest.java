@@ -1,5 +1,7 @@
 package com.kndykndy.leetcode;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.kndykndy.leetcode.p226_InvertBinaryTree.Solution;
 import com.kndykndy.leetcode.p226_InvertBinaryTree.Solution1;
 import com.kndykndy.leetcode.util.TreeNode;
@@ -20,9 +22,9 @@ class p226_InvertBinaryTreeTest {
     @Test
     void test1() {
         for (Solution solution : solutions) {
-            // todo
-//            TreeNode node = solution.invertTree(TreeNode.deserialize("[4,2,7,1,3,6,9]"));
-//            assertTrue("[4,7,2,9,6,3,1]", TreeNode.serialize(node));
+            assertEquals(
+                "[4,7,2,9,6,3,1]",
+                TreeNode.serialize(solution.invertTree(TreeNode.deserialize("[4,2,7,1,3,6,9]"))));
         }
     }
 }

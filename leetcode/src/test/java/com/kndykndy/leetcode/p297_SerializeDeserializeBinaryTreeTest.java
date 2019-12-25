@@ -1,7 +1,7 @@
 package com.kndykndy.leetcode;
 
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.kndykndy.leetcode.p297_SerializeDeserializeBinaryTree.Solution;
 import com.kndykndy.leetcode.p297_SerializeDeserializeBinaryTree.Solution1;
@@ -10,7 +10,6 @@ import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 
 class p297_SerializeDeserializeBinaryTreeTest {
 
@@ -53,8 +52,11 @@ class p297_SerializeDeserializeBinaryTreeTest {
     @Test
     void test2() {
         for (Solution solution : solutions) {
-//            assertTrue(solution.deserialize("[1,2,3]").isEqual(TreeNode.from(2, 1, 3)));
-//            assertTrue(solution.deserialize("[1,2,3,null,null,4,5]").isEqual(null));
+            assertTrue(solution.deserialize("[1,2,3]").isEqual(TreeNode.from(1, 2, 3)));
+
+            final TreeNode tree = TreeNode.from(1, 2, 3);
+            TreeNode.add(tree.right, 4, 5);
+            assertTrue(solution.deserialize("[1,2,3,null,null,4,5]").isEqual(tree));
         }
     }
 

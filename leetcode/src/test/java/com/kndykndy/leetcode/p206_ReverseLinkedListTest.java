@@ -1,6 +1,5 @@
 package com.kndykndy.leetcode;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -33,27 +32,12 @@ class p206_ReverseLinkedListTest {
     @Test
     void test2() {
         for (Solution solution : solutions) {
-            final ListNode sumListNode = solution.reverseList(ListNode.fromValues(1));
-            assertNotNull(sumListNode);
-            assertTrue(sumListNode.equals(ListNode.fromValues(1)));
-        }
-    }
-
-    @Test
-    void test3() {
-        for (Solution solution : solutions) {
-            final ListNode sumListNode = solution.reverseList(ListNode.fromValues(1, 2, 3, 4, 5));
-            assertNotNull(sumListNode);
-            assertTrue(sumListNode.equals(ListNode.fromValues(5, 4, 3, 2, 1)));
-        }
-    }
-
-    @Test
-    void test4() {
-        for (Solution solution : solutions) {
-            final ListNode sumListNode = solution.reverseList(ListNode.fromValues(5, 3, 1));
-            assertNotNull(sumListNode);
-            assertTrue(sumListNode.equals(ListNode.fromValues(1, 3, 5)));
+            assertTrue(solution.reverseList(ListNode.fromValues(1))
+                .equals(ListNode.fromValues(1)));
+            assertTrue(solution.reverseList(ListNode.fromValues(1, 2, 3, 4, 5))
+                .equals(ListNode.fromValues(5, 4, 3, 2, 1)));
+            assertTrue(solution.reverseList(ListNode.fromValues(5, 3, 1))
+                .equals(ListNode.fromValues(1, 3, 5)));
         }
     }
 }

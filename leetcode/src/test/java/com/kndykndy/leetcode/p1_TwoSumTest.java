@@ -24,9 +24,7 @@ class p1_TwoSumTest {
     void test1() {
         for (Solution solution : solutions) {
             assertNull(solution.twoSum(null, 0));
-
             assertNull(solution.twoSum(new int[]{0}, 0));
-
             assertNull(solution.twoSum(new int[]{1, 2}, 2));
         }
     }
@@ -35,11 +33,8 @@ class p1_TwoSumTest {
     void test2() {
         for (Solution solution : solutions) {
             assertArrayEquals(new int[]{0, 1}, solution.twoSum(new int[]{1, 2}, 3));
-
             assertArrayEquals(new int[]{3, 4}, solution.twoSum(new int[]{1, 2, 3, 4, 5}, 9));
-
             assertArrayEquals(new int[]{0, 4}, solution.twoSum(new int[]{4, 2, 3, 1, 5}, 9));
-
             assertArrayEquals(new int[]{0, 1}, solution.twoSum(new int[]{2, 7, 11, 15}, 9));
         }
     }

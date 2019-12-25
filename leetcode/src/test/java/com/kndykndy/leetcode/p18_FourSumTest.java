@@ -1,6 +1,7 @@
 package com.kndykndy.leetcode;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.kndykndy.leetcode.p18_FourSum.Solution;
 import com.kndykndy.leetcode.p18_FourSum.Solution1;
@@ -22,13 +23,11 @@ class p18_FourSumTest {
     @Test
     void test1() {
         for (Solution solution : solutions) {
-            List<List<Integer>> result;
-
-            result = solution.fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0);
+            final List<List<Integer>> result = solution.fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0);
             assertEquals(3, result.size());
-            assertEquals(Arrays.asList(-2, 0, 0, 2), result.get(0));
-            assertEquals(Arrays.asList(-2, -1, 1, 2), result.get(1));
-            assertEquals(Arrays.asList(-1, 0, 0, 1), result.get(2));
+            assertTrue(result.contains(Arrays.asList(-2, 0, 0, 2)));
+            assertTrue(result.contains(Arrays.asList(-2, -1, 1, 2)));
+            assertTrue(result.contains(Arrays.asList(-1, 0, 0, 1)));
         }
     }
 }

@@ -26,7 +26,6 @@ class p152_MaximumProductSubarrayTest {
             assertEquals(56, solution.maxProduct(new int[]{-2, 7, -4}));
             assertEquals(0, solution.maxProduct(new int[]{-2, 0, -1}));
             assertEquals(24, solution.maxProduct(new int[]{2, -5, -2, -4, 3}));
-//            assertEquals(, solution.maxProduct(new int[]{}));
         }
     }
 }

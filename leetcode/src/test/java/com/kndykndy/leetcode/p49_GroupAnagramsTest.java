@@ -2,7 +2,7 @@ package com.kndykndy.leetcode;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertIterableEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.kndykndy.leetcode.p49_GroupAnagrams.Solution;
 import com.kndykndy.leetcode.p49_GroupAnagrams.Solution1;
@@ -24,12 +24,13 @@ class p49_GroupAnagramsTest {
     @Test
     void test1() {
         for (Solution solution : solutions) {
-            final List<List<String>> lists = solution
-                .groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"});
-            assertEquals(3, lists.size());
-            assertIterableEquals(Arrays.asList("eat", "tea", "ate"), lists.get(0));
-            assertIterableEquals(Arrays.asList("tan", "nat"), lists.get(2));
-            assertIterableEquals(Collections.singletonList("bat"), lists.get(1));
+            final List<List<String>> result =
+                solution.groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"});
+            assertEquals(3, result.size());
+            assertTrue(result.contains(Arrays.asList("eat", "tea", "ate")));
+//            assertIterableEquals(Arrays.asList("eat", "tea", "ate"), result.get(0));
+            assertTrue(result.contains(Arrays.asList("tan", "nat")));
+            assertTrue(result.contains(Collections.singletonList("bat")));
         }
     }
 }
