@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.kndykndy.leetcode.p45_JumpGameII.BruteForceSolution;
 import com.kndykndy.leetcode.p45_JumpGameII.DpMemoizationSolution;
+import com.kndykndy.leetcode.p45_JumpGameII.GreedySolution;
 import com.kndykndy.leetcode.p45_JumpGameII.Solution;
 import java.util.Arrays;
 import java.util.List;
@@ -16,7 +17,8 @@ class p45_JumpGameIITest {
 
     @BeforeEach
     void setUp() {
-        solutions = Arrays.asList(new BruteForceSolution(), new DpMemoizationSolution());
+        solutions = Arrays.asList(
+            new BruteForceSolution(), new DpMemoizationSolution(), new GreedySolution());
     }
 
     @Test

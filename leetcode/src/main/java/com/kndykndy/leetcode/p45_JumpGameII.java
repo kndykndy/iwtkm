@@ -75,4 +75,26 @@ public class p45_JumpGameII {
             }
         }
     }
+
+    public static class GreedySolution implements Solution {
+
+        @Override
+        public int jump(int[] nums) {
+            int result = 0;
+            int farthestLeap = 0;
+
+            for (int i = 0; i < nums.length; i++) {
+                if (i + nums[i] > farthestLeap) {
+                    farthestLeap = i + nums[i];
+                    result++;
+
+                    if (farthestLeap >= nums.length - 1) {
+                        break;
+                    }
+                }
+            }
+
+            return result;
+        }
+    }
 }
