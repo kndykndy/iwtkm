@@ -1,7 +1,5 @@
 package com.kndykndy.leetcode;
 
-import java.util.Arrays;
-
 public class p344_ReverseString {
 
     interface Solution {
@@ -25,11 +23,5 @@ public class p344_ReverseString {
                 s[i] = tmpChar;
             }
         }
-    }
-
-    public static void main(String[] args) {
-        char[] s = "Hello!".toCharArray();
-        new Solution1().reverseString(s);
-        System.out.println(Arrays.equals(s, "!olleH".toCharArray()));
     }
 }

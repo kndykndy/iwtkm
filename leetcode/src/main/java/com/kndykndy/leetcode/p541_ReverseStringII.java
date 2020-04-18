@@ -34,11 +34,4 @@ public class p541_ReverseStringII {
             return new String(reverseChars);
         }
     }
-
-    public static void main(String[] args) {
-        System.out.println(
-            new Solution1().reverseStr("abcdefg", 2)
-                .equals("bacdfeg")
-        );
-    }
 }

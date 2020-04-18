@@ -36,11 +36,4 @@ public class p557_ReverseWordsStringIII {
             return sb.toString();
         }
     }
-
-    public static void main(String[] args) {
-        System.out.println(
-            new Solution1().reverseWords("Let's take LeetCode contest")
-                .equals("s'teL ekat edoCteeL tsetnoc")
-        );
-    }
 }
