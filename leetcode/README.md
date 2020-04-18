@@ -1,7 +1,7 @@
 # Leetcode problems
 
-# | Statement | Key & notes
---- | --- | ---
+| # | Statement | Key & notes |
+| - | --------- | ----------- |
 1 | Two Sum | time O(n), space O(n) with counterparts in map
 2 | Add Two Numbers | iterate both, construct LN on the fly
 3 | Length of Longest Substring
