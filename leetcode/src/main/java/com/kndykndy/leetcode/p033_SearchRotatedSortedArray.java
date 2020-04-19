@@ -88,4 +88,62 @@ public class p033_SearchRotatedSortedArray {
             }
         }
     }
+
+    public static class Solution2 implements Solution {
+
+        @Override
+        public int search(int[] nums, int target) {
+            if (nums == null || nums.length == 0) {
+                return -1;
+            }
+
+            final int len = nums.length;
+
+            if (nums[0] <= nums[len - 1]) { // it's sorted, e.g. 0 1 2 4 5 6 7
+                int p = Arrays.binarySearch(nums, target);
+                return p < 0 ? -1 : p;
+            } else { // it's rotated
+                // find rotation point first
+
+                int l = len, centerIdx = l / 2, rotationIdx, num, prevNum, nextNum;
+
+                while (true) {
+                    prevNum = centerIdx - 1 >= 0 ? nums[centerIdx - 1] : Integer.MIN_VALUE;
+                    num = nums[centerIdx];
+                    nextNum = centerIdx + 1 < len ? nums[centerIdx + 1] : Integer.MAX_VALUE;
+
+                    if (num > nextNum) {
+                        rotationIdx = centerIdx + 1;
+                        break;
+                    } else if (prevNum > num) {
+                        rotationIdx = centerIdx;
+                        break;
+                    }
+
+                    l /= 2;
+
+                    if (l == 1) {
+                        rotationIdx = num < nextNum ? centerIdx : centerIdx + 1;
+                        break;
+                    }
+
+                    if (num > nums[Math.max(centerIdx - l, 0)]) { // go right
+                        centerIdx += 1 + l / 2;
+                    } else { // go left
+                        centerIdx -= 1 + l / 2;
+                    }
+                }
+
+//                System.out.println(rotationIdx + " " + nums[rotationIdx]);
+
+                int p = Arrays.binarySearch(nums, 0, rotationIdx, target);
+                if (p >= 0) {
+                    return p;
+                }
+
+                p = Arrays.binarySearch(nums, rotationIdx, len, target);
+                return p < 0 ? -1 : p;
+            }
+        }
+    }
 }
