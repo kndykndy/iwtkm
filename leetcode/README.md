@@ -17,3 +17,4 @@
 [122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Best Time to Buy and Sell Stock II | draw; sum if next is bigger than prev
 [525](https://leetcode.com/problems/contiguous-array/) | Contiguous Array | draw; keep map max_result-to-idx_of_that_result
 [844](https://leetcode.com/problems/backspace-string-compare/) | Backspace String Compare | maintain two idxs: if encounter #, first while++ it's still #, then while-- if not
+[1008](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | Construct Binary Search Tree from Preorder Traversal | O(n^2) construct each new node from root;

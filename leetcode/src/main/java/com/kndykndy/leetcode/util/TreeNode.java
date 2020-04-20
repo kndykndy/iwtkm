@@ -49,10 +49,6 @@ public class TreeNode {
         node.right = new TreeNode(right);
     }
 
-    public static String asString(TreeNode treeNode) {
-        return treeNode != null ? treeNode.toString() : "null";
-    }
-
     public static String serialize(TreeNode tree) {
         if (tree == null) {
             return "[]";
