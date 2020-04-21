@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.kndykndy.leetcode.p1008_ConstructBinarySearchTreeFromPreorderTraversal.BruteForceSolution;
 import com.kndykndy.leetcode.p1008_ConstructBinarySearchTreeFromPreorderTraversal.Solution;
+import com.kndykndy.leetcode.p1008_ConstructBinarySearchTreeFromPreorderTraversal.Solution1;
 import com.kndykndy.leetcode.util.TreeNode;
-import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,7 +16,7 @@ class p1008_ConstructBinarySearchTreeFromPreorderTraversalTest {
 
     @BeforeEach
     void setUp() {
-        solutions = Collections.singletonList(new BruteForceSolution());
+        solutions = List.of(new BruteForceSolution(), new Solution1());
     }
 
     @Test

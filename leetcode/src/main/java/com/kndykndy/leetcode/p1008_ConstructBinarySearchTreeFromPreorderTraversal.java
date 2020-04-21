@@ -53,36 +53,42 @@ public class p1008_ConstructBinarySearchTreeFromPreorderTraversal {
 
         @Override
         public TreeNode bstFromPreorder(int[] preorder) {
-            Deque<TreeNode> q = new ArrayDeque<>();
+            final Deque<TreeNode> stack = new ArrayDeque<>();
 
-            for (int val : preorder) {
-                TreeNode node = new TreeNode(val);
+            final TreeNode root = new TreeNode(preorder[0]);
 
-                if (!q.isEmpty()) {
-                    TreeNode prev = q.getFirst();
+            TreeNode node, latest;
 
-                    if (node.val < prev.val) {
-                        prev.left = node;
-                    } else {
-                        // its more, but may be more than a parent
-                        while (val > prev.val) {
-                            prev = q.pollFirst();
-                        }
-                        if (val < prev.val) {
-                            q.addFirst(prev);
-                            prev = prev.left;
-                        }
+            for (int i = 1; i < preorder.length; i++) {
+                node = new TreeNode(preorder[i]);
 
-                        prev.right = node;
-                    }
-
-                    q.addFirst(node);
-                } else {
-                    q.addFirst(node);
+                if (preorder[i - 1] < root.val && node.val > root.val) {
+                    stack.clear();
                 }
+
+                latest = stack.peekFirst();
+                while (!stack.isEmpty() && stack.peekFirst().val < node.val) {
+                    latest = stack.pollFirst();
+                }
+                if (latest == null) {
+                    latest = root;
+                }
+
+                if (node.val < latest.val) {
+                    latest.left = node;
+                } else {
+                    latest.right = node;
+                }
+
+                stack.addFirst(node);
             }
 
-            return q.getLast();
+            return root;
         }
+    }
+
+    public static void main(String[] args) {
+        TreeNode treeNode = new Solution1().bstFromPreorder(new int[]{8, 5, 1, 7, 10, 12});
+        int a = 0;
     }
 }
