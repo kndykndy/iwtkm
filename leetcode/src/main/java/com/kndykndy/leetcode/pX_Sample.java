@@ -6,11 +6,11 @@ public class pX_Sample {
 
     }
 
-    public static class BruteForceSolution implements Solution {
+//    public static class BruteForceSolution implements Solution {
+//
+//    }
 
-    }
-
-    public static class Solution2 implements Solution {
+    public static class Solution1 implements Solution {
 
     }
 }
