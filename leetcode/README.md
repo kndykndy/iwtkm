@@ -18,4 +18,5 @@
 [525](https://leetcode.com/problems/contiguous-array/) | Contiguous Array | draw; keep map max_result-to-idx_of_that_result
 [844](https://leetcode.com/problems/backspace-string-compare/) | Backspace String Compare | maintain two idxs: if encounter #, first while++ it's still #, then while-- if not
 [1008](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | Construct Binary Search Tree from Preorder Traversal | O(n^2) construct each new node from root; O(n) create root, for each pop items from stack that is less than new node
+10000 | Counting Elements | Add all items to set, do second pass
 [10012](https://leetcode.com/problems/leftmost-column-with-a-at-least-a-one/) | Leftmost Column with at Least a One | interactive; start from top-right, if 1 go left, if 0 go down 
