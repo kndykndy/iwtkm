@@ -15,6 +15,7 @@
 [33](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Search Rotated Sorted Array | search rotation idx with manual binary search, then do Arrays.bS
 [64](https://leetcode.com/problems/minimum-path-sum/) | Minimum Path Sum | subvisit & memoize
 [122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Best Time to Buy and Sell Stock II | draw; sum if next is bigger than prev
+[146](https://leetcode.com/problems/lru-cache/) | LRU Cache | Use deque (recent usage) and map
 [201](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | Bitwise AND of Numbers Range | it's 0 if m=0 or m&n=0 or m/n leading zeros aren't equal, else do & for all
 [525](https://leetcode.com/problems/contiguous-array/) | Contiguous Array | draw; keep map max_result-to-idx_of_that_result
 [543](https://leetcode.com/problems/diameter-of-binary-tree/) | Diameter of Binary Tree | from root: get sum of l/r heights, max of recursive diameter calls, take max of them
