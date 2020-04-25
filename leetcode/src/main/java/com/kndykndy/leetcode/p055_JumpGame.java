@@ -1,54 +1,68 @@
 package com.kndykndy.leetcode;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
 
-public class p045_JumpGameII {
+public class p055_JumpGame {
 
     interface Solution {
 
-        int jump(int[] nums);
+        boolean canJump(int[] nums);
     }
 
     public static class BruteForceSolution implements Solution {
 
         @Override
-        public int jump(int[] nums) {
-            if (nums == null || nums.length == 1) {
-                return 0;
+        public boolean canJump(int[] nums) {
+            if (nums == null || nums.length == 0) {
+                return false;
             }
-
-            final Set<Integer> jumps = new HashSet<>(); // successful jumps
+            if (nums.length == 1) {
+                return true;
+            }
 
             for (int currentPos = nums[0]; currentPos > 0; currentPos--) {
-                jumpImpl(nums, currentPos, jumps, 1);
+                if (jumpImpl(nums, currentPos)) {
+                    return true;
+                }
             }
 
-            return !jumps.isEmpty() ? Collections.min(jumps) : 0;
+            return false;
         }
 
-        private void jumpImpl(int[] nums, int currentPos, Set<Integer> jumps, int jumpNumber) {
+        private boolean jumpImpl(int[] nums, int currentPos) {
             if (currentPos > nums.length - 1) { // outside
-                return;
+                return false;
             } else if (currentPos == nums.length - 1) {
-                jumps.add(jumpNumber);
-                return;
+                return true;
             }
 
             for (int i = nums[currentPos]; i > 0; i--) {
-                jumpImpl(nums, currentPos + i, jumps, jumpNumber + 1);
+                if (jumpImpl(nums, currentPos + i)) {
+                    return true;
+                }
             }
+
+            return false;
         }
     }
+
+//    public static class Solution1 implements Solution {
+//
+//        @Override
+//        public boolean canJump(int[] nums) {
+//
+//        }
+//    }
 
     public static class DpMemoizationSolution implements Solution {
 
         @Override
-        public int jump(int[] nums) {
+        public boolean canJump(int[] nums) {
+            if (nums == null || nums.length == 0) {
+                return false;
+            }
             if (nums.length == 1) {
-                return 0;
+                return true;
             }
 
             final int[] waysToGet = new int[nums.length];
@@ -60,7 +74,7 @@ public class p045_JumpGameII {
             }
 
             final int result = waysToGet[waysToGet.length - 1];
-            return result != Integer.MAX_VALUE ? result : 0;
+            return result != Integer.MAX_VALUE;
         }
 
         private void jumpImpl(int[] nums, int pos, int[] waysToGet, int jumpIdx) {
@@ -74,28 +88,6 @@ public class p045_JumpGameII {
                     jumpImpl(nums, pos + i, waysToGet, jumpIdx + 1);
                 }
             }
-        }
-    }
-
-    public static class GreedySolution implements Solution {
-
-        @Override
-        public int jump(int[] nums) {
-            int result = 0;
-            int farthestLeap = 0;
-
-            for (int i = 0; i < nums.length; i++) {
-                if (i + nums[i] > farthestLeap) {
-                    farthestLeap = i + nums[i];
-                    result++;
-
-                    if (farthestLeap >= nums.length - 1) {
-                        break;
-                    }
-                }
-            }
-
-            return result;
         }
     }
 }

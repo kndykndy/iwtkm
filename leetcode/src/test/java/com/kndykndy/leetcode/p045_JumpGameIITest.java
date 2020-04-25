@@ -28,6 +28,9 @@ class p045_JumpGameIITest {
             assertEquals(2, solution.jump(new int[]{1, 2, 3}));
             assertEquals(2, solution.jump(new int[]{2, 3, 0, 1, 4}));
             assertEquals(3, solution.jump(new int[]{1, 2, 1, 1, 1}));
+
+            //this case cannot be played by greedy solution
+            //assertEquals(0, solution.jump(new int[]{3, 2, 1, 0, 4}));
         }
     }
 }
