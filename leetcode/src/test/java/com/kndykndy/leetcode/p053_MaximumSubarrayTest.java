@@ -24,6 +24,9 @@ class p053_MaximumSubarrayTest {
         for (Solution solution : solutions) {
             assertEquals(6, solution.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
             assertEquals(21, solution.maxSubArray(new int[]{2, 3, 4, 5, 7}));
+            assertEquals(1, solution.maxSubArray(new int[]{-2, 1}));
+            assertEquals(0, solution.maxSubArray(new int[]{-1, 0, -2}));
+            assertEquals(5, solution.maxSubArray(new int[]{2, 0, 3, -2}));
         }
     }
 }

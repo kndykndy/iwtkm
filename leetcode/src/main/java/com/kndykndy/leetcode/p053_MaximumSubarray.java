@@ -9,6 +9,7 @@ public class p053_MaximumSubarray {
 
     /**
      * Time O(n), space O(1).
+     * Kadane's algorithm.
      */
     public static class Solution1 implements Solution {
 
@@ -45,10 +46,6 @@ public class p053_MaximumSubarray {
         }
 
         private int maxSubArray(int[] nums, int leftIdx, int rightIdx) {
-            System.out.print(leftIdx + " " + rightIdx + ", ");
-            System.out.println("nums[" + leftIdx + "]=" + nums[leftIdx] + " "
-                + "nums[" + rightIdx + "]=" + nums[rightIdx]);
-
             if (rightIdx - leftIdx == 0) {
                 return nums[leftIdx];
             }
