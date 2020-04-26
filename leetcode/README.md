@@ -23,5 +23,6 @@
 [560](https://leetcode.com/problems/subarray-sum-equals-k/) | Subarray Sum Equals K | O(n^2) simple for in for; o(n) map conseq_sum-to-its_occurance, getOrDefault+merge
 [844](https://leetcode.com/problems/backspace-string-compare/) | Backspace String Compare | maintain two idxs: if encounter #, first while++ it's still #, then while-- if not
 [1008](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | Construct Binary Search Tree from Preorder Traversal | O(n^2) construct each new node from root; O(n) create root, for each pop items from stack that is less than new node
+[1143](https://leetcode.com/problems/longest-common-subsequence/) | Longest Common Subsequence | DP 0 matrix; if ch1=ch2 dp[-1][-1]+1, max(dp[-1][],dp[][-1]) otherwise
 10000 | Counting Elements | Add all items to set, do second pass
 10012 | Leftmost Column with at Least a One | interactive; start from top-right, if 1 go left, if 0 go down 
