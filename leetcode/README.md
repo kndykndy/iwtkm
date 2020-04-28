@@ -29,4 +29,5 @@
 [1046](https://leetcode.com/problems/last-stone-weight/) | Last Stone Weight | PQ, add all to it, consider two each step
 [1143](https://leetcode.com/problems/longest-common-subsequence/) | Longest Common Subsequence | DP 0 matrix; if ch1=ch2 dp[-1][-1]+1, max(dp[-1][],dp[][-1]) otherwise
 10000 | Counting Elements | Add all items to set, do second pass
+10001 | First Unique Number | Keep two sets: repeated and unique
 10012 | Leftmost Column with at Least a One | Start from top-right, if 1 go left, if 0 go down 
