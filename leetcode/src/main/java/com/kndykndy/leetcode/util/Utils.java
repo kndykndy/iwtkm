@@ -18,7 +18,10 @@ public class Utils {
         }
     }
 
-    public static int[][] strTo2DArray(String str) {
+    /**
+     * Converts string of the kind [[1,3,1],[1,5,1],[4,2,1]] to a 2-dimensional int array.
+     */
+    public static int[][] strTo2DIntArray(String str) {
         if (str == null || str.isEmpty()) {
             return null;
         }
@@ -33,6 +36,33 @@ public class Utils {
         final Matcher matcher = Pattern.compile("(\\d+)").matcher(str);
         while (matcher.find()) {
             result[row][col++] = Integer.parseInt(matcher.group());
+            if (col == cols) {
+                row++;
+                col = 0;
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * Converts string of the kind [[1,3,1],[1,5,1],[4,2,1]] to a 2-dimensional char array.
+     */
+    public static char[][] strTo2DCharArray(String str) {
+        if (str == null || str.isEmpty()) {
+            return null;
+        }
+
+        final int rows = str.split("\\s*(],\\[)\\s*").length;
+        final int cols = str.split("\\s*(,)\\s*").length / rows;
+
+        final char[][] result = new char[rows][cols];
+
+        int row = 0, col = 0;
+
+        final Matcher matcher = Pattern.compile("(\\d+)").matcher(str);
+        while (matcher.find()) {
+            result[row][col++] = matcher.group().charAt(0);
             if (col == cols) {
                 row++;
                 col = 0;

@@ -2,7 +2,7 @@
 
 | # | Statement | Key & notes |
 | - | --------- | ----------- |
-[1](https://leetcode.com/problems/two-sum/) | Two Sum | tO(n)sO(n) with counterparts in map
+[1](https://leetcode.com/problems/two-sum/) | Two Sum | tO(n) sO(n) with counterparts in map
 [2](https://leetcode.com/problems/add-two-numbers) | Add Two Numbers | Iterate both, construct LN on the fly
 [3](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Longest Substring Without Repeating Characters
 [4](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Find Median Sorted Array | Hard;
@@ -19,6 +19,7 @@
 [146](https://leetcode.com/problems/lru-cache/) | LRU Cache | Use deque for recent usage and map
 [201](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | Bitwise AND of Numbers Range | It's 0 if m=0 or m&n=0 or m/n leading zeros aren't equal, else do & for all
 [202](https://leetcode.com/problems/happy-number/) | Happy Number | Calculate & remember each iteration; false if num already occured
+[221](https://leetcode.com/problems/maximal-square/) | Maximal Square | DP o matrix; if 1 min(-1 -1,-1 0, 0 -1)
 [287](https://leetcode.com/problems/find-the-duplicate-number/) | Find the Duplicate Number | A list with cycle problem actually; use Tortoise&Hare
 [525](https://leetcode.com/problems/contiguous-array/) | Contiguous Array | Draw; Keep map max_result-to-idx_of_that_result
 [543](https://leetcode.com/problems/diameter-of-binary-tree/) | Diameter of Binary Tree | From root: get sum of l/r heights, max of recursive diameter calls, take max of them
@@ -29,5 +30,5 @@
 [1046](https://leetcode.com/problems/last-stone-weight/) | Last Stone Weight | PQ, add all to it, consider two each step
 [1143](https://leetcode.com/problems/longest-common-subsequence/) | Longest Common Subsequence | DP 0 matrix; if ch1=ch2 dp[-1][-1]+1, max(dp[-1][],dp[][-1]) otherwise
 10000 | Counting Elements | Add all items to set, do second pass
-10001 | First Unique Number | Keep two sets: repeated and unique
+10001 | First Unique Number | Keep two sets: repeated and unique or single LinkedHashMap
 10012 | Leftmost Column with at Least a One | Start from top-right, if 1 go left, if 0 go down 
