@@ -17,9 +17,12 @@
 [64](https://leetcode.com/problems/minimum-path-sum/) | Minimum Path Sum | Subvisit & memoize
 [122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Best Time to Buy and Sell Stock II | Draw; Sum if next is bigger than prev
 [146](https://leetcode.com/problems/lru-cache/) | LRU Cache | Use deque for recent usage and map
+[155](https://leetcode.com/problems/min-stack/) | Min Stack | Keep two deques: data and min-stack
+[200](https://leetcode.com/problems/number-of-islands/) | Number of Islands | Go thru matrix and if 1, waterize all around recursively
 [201](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | Bitwise AND of Numbers Range | It's 0 if m=0 or m&n=0 or m/n leading zeros aren't equal, else do & for all
-[202](https://leetcode.com/problems/happy-number/) | Happy Number | Calculate & remember each iteration; false if num already occured
-[221](https://leetcode.com/problems/maximal-square/) | Maximal Square | DP o matrix; if 1 min(-1 -1,-1 0, 0 -1)
+[202](https://leetcode.com/problems/happy-number/) | Happy Number | Calculate & remember each iteration; false if num already occurred
+[221](https://leetcode.com/problems/maximal-square/) | Maximal Square | DP o matrix; if 1 min(-1 -1, -1 0, 0 -1)
+[283](https://leetcode.com/problems/move-zeroes/) | Move Zeroes | Keep ptr, increase it only when meet not zero, nullify rest at second pass
 [287](https://leetcode.com/problems/find-the-duplicate-number/) | Find the Duplicate Number | A list with cycle problem actually; use Tortoise&Hare
 [525](https://leetcode.com/problems/contiguous-array/) | Contiguous Array | Draw; Keep map max_result-to-idx_of_that_result
 [543](https://leetcode.com/problems/diameter-of-binary-tree/) | Diameter of Binary Tree | From root: get sum of l/r heights, max of recursive diameter calls, take max of them
