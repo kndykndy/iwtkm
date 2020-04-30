@@ -11,11 +11,12 @@
 [7](https://leetcode.com/problems/reverse-integer) | Reverse Integer | % and /
 [8](https://leetcode.com/problems/string-to-integer-atoi) | String to Integer (atoi) | Get numbers as str.charAt(i) - '0'
 [9](https://leetcode.com/problems/palindrome-number) | Palindrome Number | % and /
-10 | Regular Expression Matching
+10 | Regular Expression Matching | TODO
 [33](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Search Rotated Sorted Array | Search rotation idx with manual binary search, then do Arrays.bS
 [53](https://leetcode.com/problems/maximum-subarray/) | Maximum Subarray | Kadane's algorithm
 [64](https://leetcode.com/problems/minimum-path-sum/) | Minimum Path Sum | Subvisit & memoize
 [122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Best Time to Buy and Sell Stock II | Draw; Sum if next is bigger than prev
+[124](https://leetcode.com/problems/binary-tree-maximum-path-sum/submissions/) | Binary Tree Maximum Path Sum | God bless! TODO
 [146](https://leetcode.com/problems/lru-cache/) | LRU Cache | Use deque for recent usage and map
 [155](https://leetcode.com/problems/min-stack/) | Min Stack | Keep two deques: data and min-stack
 [200](https://leetcode.com/problems/number-of-islands/) | Number of Islands | Go thru matrix and if 1, waterize all around recursively
@@ -35,3 +36,4 @@
 10000 | Counting Elements | Add all items to set, do second pass
 10001 | First Unique Number | Keep two sets: repeated and unique or single LinkedHashMap
 10012 | Leftmost Column with at Least a One | Start from top-right, if 1 go left, if 0 go down 
+ | Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree | BFS with subsearch if nodes are equal in vals
