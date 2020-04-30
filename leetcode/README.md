@@ -1,5 +1,9 @@
 # Leetcode problems
 
+[My Leetcode profile](https://leetcode.com/kndykndy/)
+
+Leetcode numbered tasks
+
 | # | Statement | Key & notes |
 | - | --------- | ----------- |
 [1](https://leetcode.com/problems/two-sum/) | Two Sum | Time O(n) & space O(n) with counterparts in map.
@@ -35,8 +39,19 @@
 [1008](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | Construct Binary Search Tree from Preorder Traversal | O(n^2) construct each node from root. O(n) create root, for each pop items from stack that is less than new node.
 [1046](https://leetcode.com/problems/last-stone-weight/) | Last Stone Weight | **PQ**, add all to it, take two from it each step.
 [1143](https://leetcode.com/problems/longest-common-subsequence/) | Longest Common Subsequence | **DP** 0 matrix; if ch1=ch2 dp[-1][-1]+1, max(dp[-1][],dp[][-1]) otherwise.
-[Challenge](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/532/week-5/3315/) | Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree | **BFS** with subsearch if nodes are equal.
-[Challenge](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/) | Counting Elements | Add all items to **set**, do second pass.
-[Challenge](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/531/week-4/3313/) | First Unique Number | Keep two **sets**: repeated and unique or single LinkedHashMap
-[Challenge](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/530/week-3/3306/) | Leftmost Column with at Least a One | Start from top-right, if 1 go left, if 0 go down.
-[Challenge](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3299/) | Perform String Shifts | Calculate shift and then do rotation.
+
+Leetcode numbered tasks test
+
+| | # | Title | Difficulty | Key & notes |
+| | - | ----- | ---------- | ----------- |
+:white_check_mark: | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Time O(n) & space O(n) with counterparts in map.
+ | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | 
+
+Misc unnumbered Leetcode tasks
+|   | Title | Difficulty (subjective) | Key & notes |
+| - | ----- | ----------------------- | ----------- |
+| :white_check_mark: | [Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/532/week-5/3315/) | :heart: Hard | **BFS** with subsearch if nodes are equal.
+| :white_check_mark: | [Counting Elements (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/) | :green_heart: Easy | Add all items to **set**, do second pass.
+| :white_check_mark: | [First Unique Number (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/531/week-4/3313/) | :yellow_heart: Medium | Keep two **sets**: repeated and unique or single LinkedHashMap
+| :white_check_mark: | [Leftmost Column with at Least a One (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/530/week-3/3306/) | :yellow_heart: Medium | Start from top-right, if 1 go left, if 0 go down.
+| :white_check_mark: | [Perform String Shifts (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3299/) | :yellow_heart: Medium | Calculate shift and then do rotation.
