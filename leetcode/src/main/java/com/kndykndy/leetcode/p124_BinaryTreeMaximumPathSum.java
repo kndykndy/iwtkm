@@ -45,4 +45,29 @@ public class p124_BinaryTreeMaximumPathSum {
             return m;
         }
     }
+
+    public static class OptimalSolution implements Solution {
+
+        int max;
+
+        @Override
+        public int maxPathSum(TreeNode root) {
+            max = Integer.MIN_VALUE; // to rerun the test with same instance
+            maxPathSumHelper(root);
+            return max;
+        }
+
+        private int maxPathSumHelper(TreeNode root) {
+            if (root == null) {
+                return 0;
+            }
+
+            int psl = Math.max(0, maxPathSumHelper(root.left));
+            int psr = Math.max(0, maxPathSumHelper(root.right));
+
+            max = Math.max(max, psl + psr + root.val);
+
+            return Math.max(psl, psr) + root.val;
+        }
+    }
 }

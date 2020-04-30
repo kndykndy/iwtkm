@@ -16,7 +16,7 @@
 [53](https://leetcode.com/problems/maximum-subarray/) | Maximum Subarray | Kadane's algorithm
 [64](https://leetcode.com/problems/minimum-path-sum/) | Minimum Path Sum | Subvisit & memoize
 [122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Best Time to Buy and Sell Stock II | Draw; Sum if next is bigger than prev
-[124](https://leetcode.com/problems/binary-tree-maximum-path-sum/submissions/) | Binary Tree Maximum Path Sum | God bless! TODO
+[124](https://leetcode.com/problems/binary-tree-maximum-path-sum/submissions/) | Binary Tree Maximum Path Sum | Hard; Recurse then memoize max sum and return from recursion
 [146](https://leetcode.com/problems/lru-cache/) | LRU Cache | Use deque for recent usage and map
 [155](https://leetcode.com/problems/min-stack/) | Min Stack | Keep two deques: data and min-stack
 [200](https://leetcode.com/problems/number-of-islands/) | Number of Islands | Go thru matrix and if 1, waterize all around recursively

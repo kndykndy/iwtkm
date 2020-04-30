@@ -2,10 +2,10 @@ package com.kndykndy.leetcode;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.kndykndy.leetcode.p124_BinaryTreeMaximumPathSum.OptimalSolution;
 import com.kndykndy.leetcode.p124_BinaryTreeMaximumPathSum.Solution;
 import com.kndykndy.leetcode.p124_BinaryTreeMaximumPathSum.Solution1;
 import com.kndykndy.leetcode.util.TreeNode;
-import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,7 +16,7 @@ class p124_BinaryTreeMaximumPathSumTest {
 
     @BeforeEach
     void setUp() {
-        solutions = Collections.singletonList(new Solution1());
+        solutions = List.of(new Solution1(), new OptimalSolution());
     }
 
     @Test
