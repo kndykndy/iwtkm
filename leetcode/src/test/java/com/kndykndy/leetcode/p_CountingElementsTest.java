@@ -2,14 +2,14 @@ package com.kndykndy.leetcode;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.kndykndy.leetcode.p10000_CountingElements.Solution;
-import com.kndykndy.leetcode.p10000_CountingElements.Solution1;
+import com.kndykndy.leetcode.p_CountingElements.Solution;
+import com.kndykndy.leetcode.p_CountingElements.Solution1;
 import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class p10000_CountingElementsTest {
+class p_CountingElementsTest {
 
     private List<Solution> solutions;
 

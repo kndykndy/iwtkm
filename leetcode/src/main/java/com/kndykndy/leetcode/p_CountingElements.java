@@ -3,7 +3,7 @@ package com.kndykndy.leetcode;
 import java.util.HashSet;
 import java.util.Set;
 
-public class p10000_CountingElements {
+public class p_CountingElements {
 
     interface Solution {
 

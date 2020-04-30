@@ -2,14 +2,14 @@ package com.kndykndy.leetcode;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.kndykndy.leetcode.p10001_FirstUniqueNumber.Solution;
-import com.kndykndy.leetcode.p10001_FirstUniqueNumber.Solution1;
-import com.kndykndy.leetcode.p10001_FirstUniqueNumber.Solution2;
+import com.kndykndy.leetcode.p_FirstUniqueNumber.Solution;
+import com.kndykndy.leetcode.p_FirstUniqueNumber.Solution1;
+import com.kndykndy.leetcode.p_FirstUniqueNumber.Solution2;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
-class p10001_FirstUniqueNumberTest {
+class p_FirstUniqueNumberTest {
 
     @Test
     void test1() {

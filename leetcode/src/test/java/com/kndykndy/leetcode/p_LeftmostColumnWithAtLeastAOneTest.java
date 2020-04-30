@@ -3,11 +3,11 @@ package com.kndykndy.leetcode;
 import static com.kndykndy.leetcode.util.Utils.strTo2DIntArray;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.kndykndy.leetcode.p10012_LeftmostColumnWithAtLeastAOne.BinaryMatrix;
-import com.kndykndy.leetcode.p10012_LeftmostColumnWithAtLeastAOne.BruteForceSolution;
-import com.kndykndy.leetcode.p10012_LeftmostColumnWithAtLeastAOne.Solution;
-import com.kndykndy.leetcode.p10012_LeftmostColumnWithAtLeastAOne.Solution1;
-import com.kndykndy.leetcode.p10012_LeftmostColumnWithAtLeastAOne.Solution2;
+import com.kndykndy.leetcode.p_LeftmostColumnWithAtLeastAOne.BinaryMatrix;
+import com.kndykndy.leetcode.p_LeftmostColumnWithAtLeastAOne.BruteForceSolution;
+import com.kndykndy.leetcode.p_LeftmostColumnWithAtLeastAOne.Solution;
+import com.kndykndy.leetcode.p_LeftmostColumnWithAtLeastAOne.Solution1;
+import com.kndykndy.leetcode.p_LeftmostColumnWithAtLeastAOne.Solution2;
 import java.util.AbstractMap.SimpleImmutableEntry;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -15,7 +15,7 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class p10012_LeftmostColumnWithAtLeastAOneTest {
+class p_LeftmostColumnWithAtLeastAOneTest {
 
     static class BasicBinaryMatrix implements BinaryMatrix {
 

@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-public class p10001_FirstUniqueNumber {
+public class p_FirstUniqueNumber {
 
     interface Solution {
 
