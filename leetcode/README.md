@@ -44,8 +44,8 @@ Leetcode numbered tasks test
 
 |   | # | Title | Difficulty | Key & notes |
 | - | - | ----- | ---------- | ----------- |
-:white_check_mark: | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Time O(n) & space O(n) with counterparts in map.
- | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | 
+:white_check_mark: | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Time O(n) & space O(n) with counterparts in map.
+|   | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard | 
 
 Misc unnumbered Leetcode tasks
 |   | Title | Difficulty (subjective) | Key & notes |
