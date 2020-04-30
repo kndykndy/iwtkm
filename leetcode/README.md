@@ -17,7 +17,7 @@
 [64](https://leetcode.com/problems/minimum-path-sum/) | Minimum Path Sum | Subvisit & memoize.
 [122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Best Time to Buy and Sell Stock II | **Draw**! Sum if next is bigger than prev.
 [124](https://leetcode.com/problems/binary-tree-maximum-path-sum/submissions/) | Binary Tree Maximum Path Sum | **Hard**. Recurse then memoize max sum and return from recursion.
-[136](https://leetcode.com/problems/single-number/) | Simple Number | 
+[136](https://leetcode.com/problems/single-number/) | Simple Number | O(n) with a set. O(n) XOR all values.
 [146](https://leetcode.com/problems/lru-cache/) | LRU Cache | Use **deque** for recent usage and map.
 [155](https://leetcode.com/problems/min-stack/) | Min Stack | Keep two **deques**: data and min-stack.
 [200](https://leetcode.com/problems/number-of-islands/) | Number of Islands | Go thru matrix and if 1, waterize all around recursively.
@@ -35,8 +35,8 @@
 [1008](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | Construct Binary Search Tree from Preorder Traversal | O(n^2) construct each node from root. O(n) create root, for each pop items from stack that is less than new node.
 [1046](https://leetcode.com/problems/last-stone-weight/) | Last Stone Weight | **PQ**, add all to it, take two from it each step.
 [1143](https://leetcode.com/problems/longest-common-subsequence/) | Longest Common Subsequence | **DP** 0 matrix; if ch1=ch2 dp[-1][-1]+1, max(dp[-1][],dp[][-1]) otherwise.
-[Without number](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/532/week-5/3315/) | Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree | **BFS** with subsearch if nodes are equal.
-[Without number](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/) | Counting Elements | Add all items to **set**, do second pass.
-[Without number](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/531/week-4/3313/) | First Unique Number | Keep two **sets**: repeated and unique or single LinkedHashMap
-[Without number](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/530/week-3/3306/) | Leftmost Column with at Least a One | Start from top-right, if 1 go left, if 0 go down.
-[Without number](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3299/) | Perform String Shifts | Calculate shift and then do rotation.
+[Challenge](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/532/week-5/3315/) | Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree | **BFS** with subsearch if nodes are equal.
+[Challenge](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/) | Counting Elements | Add all items to **set**, do second pass.
+[Challenge](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/531/week-4/3313/) | First Unique Number | Keep two **sets**: repeated and unique or single LinkedHashMap
+[Challenge](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/530/week-3/3306/) | Leftmost Column with at Least a One | Start from top-right, if 1 go left, if 0 go down.
+[Challenge](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3299/) | Perform String Shifts | Calculate shift and then do rotation.
