@@ -42,16 +42,16 @@ Leetcode numbered tasks
 
 Leetcode numbered tasks test
 
-| | # | Title | Difficulty | Key & notes |
-| | - | ----- | ---------- | ----------- |
+|   | # | Title | Difficulty | Key & notes |
+| - | - | ----- | ---------- | ----------- |
 :white_check_mark: | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Time O(n) & space O(n) with counterparts in map.
  | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | 
 
 Misc unnumbered Leetcode tasks
 |   | Title | Difficulty (subjective) | Key & notes |
 | - | ----- | ----------------------- | ----------- |
-| :white_check_mark: | [Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/532/week-5/3315/) | :heart: Hard | **BFS** with subsearch if nodes are equal.
-| :white_check_mark: | [Counting Elements (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/) | :green_heart: Easy | Add all items to **set**, do second pass.
-| :white_check_mark: | [First Unique Number (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/531/week-4/3313/) | :yellow_heart: Medium | Keep two **sets**: repeated and unique or single LinkedHashMap
-| :white_check_mark: | [Leftmost Column with at Least a One (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/530/week-3/3306/) | :yellow_heart: Medium | Start from top-right, if 1 go left, if 0 go down.
-| :white_check_mark: | [Perform String Shifts (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3299/) | :yellow_heart: Medium | Calculate shift and then do rotation.
+| :white_check_mark: | [Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/532/week-5/3315/) | Hard | **BFS** with subsearch if nodes are equal.
+| :white_check_mark: | [Counting Elements (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/) | Easy | Add all items to **set**, do second pass.
+| :white_check_mark: | [First Unique Number (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/531/week-4/3313/) | Medium | Keep two **sets**: repeated and unique or single LinkedHashMap
+| :white_check_mark: | [Leftmost Column with at Least a One (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/530/week-3/3306/) | Medium | Start from top-right, if 1 go left, if 0 go down.
+| :white_check_mark: | [Perform String Shifts (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3299/) | Medium | Calculate shift and then do rotation.
