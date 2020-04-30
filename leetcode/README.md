@@ -33,7 +33,7 @@
 [1008](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | Construct Binary Search Tree from Preorder Traversal | O(n^2) construct each new node from root; O(n) create root, for each pop items from stack that is less than new node
 [1046](https://leetcode.com/problems/last-stone-weight/) | Last Stone Weight | PQ, add all to it, consider two each step
 [1143](https://leetcode.com/problems/longest-common-subsequence/) | Longest Common Subsequence | DP 0 matrix; if ch1=ch2 dp[-1][-1]+1, max(dp[-1][],dp[][-1]) otherwise
-- | Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree | BFS with subsearch if nodes are equal in vals
-- | Counting Elements | Add all items to set, do second pass
-- | First Unique Number | Keep two sets: repeated and unique or single LinkedHashMap
-- | Leftmost Column with at Least a One | Start from top-right, if 1 go left, if 0 go down 
+Without number | Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree | BFS with subsearch if nodes are equal in vals
+Without number | Counting Elements | Add all items to set, do second pass
+Without number | First Unique Number | Keep two sets: repeated and unique or single LinkedHashMap
+Without number | Leftmost Column with at Least a One | Start from top-right, if 1 go left, if 0 go down 
