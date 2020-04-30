@@ -15,25 +15,59 @@
 :white_check_mark: | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | Easy | % and /
 :white_check_mark: | 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | Medium | Get numbers as str.charAt(i) - '0'
 :white_check_mark: | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Easy | % and /
-|   | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard | 
+|   | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard |
+|   | 20 | [Valid Parenthesis](https://leetcode.com/problems/valid-parentheses) | Easy |
+|   | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Medium | 
+|   | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium | 
 :white_check_mark: | 33 | [Search Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Search rotation idx with manual binary search, then do Arrays.bS for both parts.
+:white_check_mark: | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | Fix index and swap all other indexes.
+:white_check_mark: | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | Medium | Fix index and swap all other indexes, if they are not equal to a fixed one.
+:white_check_mark: | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | Convert each str to char array and then add to map as key. 
 :white_check_mark: | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Easy | **Kadane**'s algorithm.
+|   | 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | Medium |
+|   | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium |
+|   | 59 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | Medium |
+|   | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | Medium | **DP**
 :white_check_mark: | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | Medium | Subvisit & memoize.
+|   | 67 | [Add Binary](https://leetcode.com/problems/add-binary) | Easy |
+|   | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium
+|   | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | Medium |
+|   | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium
+:white_check_mark: | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | Medium | 
+|   | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium |
 :white_check_mark: | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Easy | **Draw**! Sum if next is bigger than prev.
 :white_check_mark: | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/submissions/) | Hard | Recurse then memoize max sum and return from recursion.
 :white_check_mark: | 136 | [Simple Number](https://leetcode.com/problems/single-number/) | Easy | O(n) with a set. O(n) XOR all values.
 :white_check_mark: | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | Use **deque** for recent usage and map.
+:white_check_mark: | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | Medium | Go thru str, cut words before a space and insert into a StringBuffer. 
 :white_check_mark: | 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | Easy | Keep two **deques**: data and min-stack.
+:white_check_mark: | 191 | [Number of 1 bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | Do n&=(n-1) while not 9.
+|   | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | Medium |
 :white_check_mark: | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium | Go thru matrix and if 1, waterize all around recursively.
 :white_check_mark: | 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | Medium | It's 0 if m=0 or m&n=0 or m/n leading zeros aren't equal immediately, else do & for all.
 :white_check_mark: | 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | Easy | Calculate & remember each iteration. Return false if num already occurred.
+|   | 204 | [Count Primes](https://leetcode.com/problems/count-primes/) | Easy |
+:white_check_mark: | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | 
 :white_check_mark: | 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | Medium | **DP** 0 matrix. If 1 the min(-1 -1, -1 0, 0 -1) + 1.
+|   | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | Medium |
+|   | 237 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) | Easy |
 :white_check_mark: | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy | Keep ptr, increase it only when meet not zero, nullify rest at second pass.
 :white_check_mark: | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | A list with cycle problem actually. **Tortoise&Hare**.
+|   | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | **DP**
+|   | 331 | [Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/) | Medium |
+:white_check_mark: | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | Use temp char and swap chars.
+|   | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium |
+|   | 435 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals) | Medium |
 :white_check_mark: | 525 | [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | Medium | **Draw**! Keep map max-result to idx-of-that-result.
+:white_check_mark: | 541 | [Reverse String II](https://leetcode.com/problems/reverse-string-ii) | When should reverse, use helper to reverse from-to and use swap in it.
 :white_check_mark: | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy | From root: get sum of l/r heights, max of recursive diameter calls, take max of them.
-:white_check_mark: | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium | O(n^2) simple folded fors. O(n) map conseq-sum to its-occurance, getOrDefault+merge.
+:white_check_mark: | 557 | [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii) | Easy | Use two SB, insert new char at 0 at second, when encounter space, append second to first.
+:white_check_mark: | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium | O(n^2) simple folded FORs. O(n) map conseq-sum to its-occurrence, getOrDefault+merge.
+|   | 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Medium |
+|   | 572 | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | Easy |
 :white_check_mark: | 678 | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/solution/) | Medium | Do both left-to-right and right-to-left passes, check for extra parenthesis.
+|   | 829 | [Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/) | Hard |
+|   | 836 | [Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | Easy | 
 :white_check_mark: | 844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | Easy | Keep two idxs: if encounter #, first while++ it's still #, then while-- if not.
 :white_check_mark: | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | Keep two pointers, increase second only when first/2>second.
 :white_check_mark: | 1008 | [Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | Medium | O(n^2) construct each node from root. O(n) create root, for each pop items from stack that is less than new node.
