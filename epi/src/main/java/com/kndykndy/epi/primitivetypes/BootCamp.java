@@ -199,7 +199,10 @@ public class BootCamp {
         }
     }
 
-    public static int binarySearch(int[] nums, int target) {
+    /**
+     * Own binary search version.
+     */
+    public static int binarySearchOwn(int[] nums, int target) {
         final int l = nums.length;
 
         if (target < nums[0] || target > nums[l - 1]) {
@@ -238,7 +241,10 @@ public class BootCamp {
         }
     }
 
-    public static int binarySearch(int[] nums, int target, int leftIdx, int rightIdx) {
+    /**
+     * Own partial binary search version.
+     */
+    public static int binarySearchOwn(int[] nums, int target, int leftIdx, int rightIdx) {
         final int l = rightIdx - leftIdx + 1;
 
         if (target < nums[leftIdx] || target > nums[rightIdx]) {
@@ -275,6 +281,48 @@ public class BootCamp {
                 }
             }
         }
+    }
+
+    /**
+     * Correct binary search.
+     */
+    public static int binarySearch(int[] nums, int target) {
+        int left = 0;
+        int right = nums.length;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (target == nums[mid]) {
+                return mid;
+            } else {
+                if (target > nums[mid]) {
+                    left = mid + 1;
+                } else {
+                    right = mid;
+                }
+            }
+        }
+        return -1;
+    }
+
+    /**
+     * Correct partial binary search.
+     */
+    public static int binarySearch(int[] nums, int target, int leftIdx, int rightIdx) {
+        int left = leftIdx;
+        int right = rightIdx + 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (target == nums[mid]) {
+                return mid;
+            } else {
+                if (target > nums[mid]) {
+                    left = mid + 1;
+                } else {
+                    right = mid;
+                }
+            }
+        }
+        return -1;
     }
 
     public static void main(String[] args) {
