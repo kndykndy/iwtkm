@@ -2,15 +2,15 @@ package com.kndykndy.leetcode;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.kndykndy.leetcode.p201_BitwiseANDOfNumbersRange.BruteForceSolution;
-import com.kndykndy.leetcode.p201_BitwiseANDOfNumbersRange.Solution;
-import com.kndykndy.leetcode.p201_BitwiseANDOfNumbersRange.Solution1;
+import com.kndykndy.leetcode.p201_BitwiseAndOfNumbersRange.BruteForceSolution;
+import com.kndykndy.leetcode.p201_BitwiseAndOfNumbersRange.Solution;
+import com.kndykndy.leetcode.p201_BitwiseAndOfNumbersRange.Solution1;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class p201_BitwiseANDOfNumbersRangeTest {
+class p201_BitwiseAndOfNumbersRangeTest {
 
     private List<Solution> solutions;
 

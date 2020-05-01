@@ -1,6 +1,6 @@
 package com.kndykndy.leetcode;
 
-public class p201_BitwiseANDOfNumbersRange {
+public class p201_BitwiseAndOfNumbersRange {
 
     interface Solution {
 

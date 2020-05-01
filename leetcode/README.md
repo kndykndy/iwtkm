@@ -1,8 +1,12 @@
-# Leetcode problems
+# LeetCode problems
 
-[My Leetcode profile](https://leetcode.com/kndykndy/)
+[My LeetCode profile](https://leetcode.com/kndykndy/)
 
-### Leetcode numbered tasks
+### Intermediate achievements
+
+* Finished [30-Day-LeetCoding Challenge](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/)
+
+### LeetCode numbered tasks
 
 |   | # | Title | Difficulty | Key & notes |
 | - | - | ----- | ---------- | ----------- |
@@ -16,10 +20,16 @@
 :white_check_mark: | 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | Medium | Get numbers as str.charAt(i) - '0'
 :white_check_mark: | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Easy | % and /
 |   | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard |
+:white_check_mark: | 11 | [Container with Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | Time O(n), space O(1): count max for: (j - i) * Math.min(height[i], height[j])
+:white_check_mark: | 15 | [3Sum](https://leetcode.com/problems/3sum) | Medium | Sort, set i1=0,i2=1,i3=length-1, fix i1, find sum of the rest two complement to fixed.
+:white_check_mark: | 16 | [3Sum Closet](https://leetcode.com/problems/3sum-closest) | Medium | Sort, set i1=0,i2=1,i3=length-1, fix i1, find sum of the rest two as min closest.
+:white_check_mark: | 18 | [4Sum](https://leetcode.com/problems/4sum) | Medium | Sort, set i1=0,i2=1,i3=2,i4=length-1, then for-while-while
 |   | 20 | [Valid Parenthesis](https://leetcode.com/problems/valid-parentheses) | Easy |
 |   | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Medium | 
 |   | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium | 
 :white_check_mark: | 33 | [Search Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Search rotation idx with manual binary search, then do Arrays.bS for both parts.
+:white_check_mark: | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard | **DP** boolean matrix. 0,0 true. If s=p||p=? then -1,-1. If * then -1,0||0,-1. Else false.
+:white_check_mark: | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Hard | **DP**. Take num[0] and recurse for it down to zero. Memoize ways to get to each pos.
 :white_check_mark: | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | Fix index and swap all other indexes.
 :white_check_mark: | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | Medium | Fix index and swap all other indexes, if they are not equal to a fixed one.
 :white_check_mark: | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | Convert each str to char array and then add to map as key. 
@@ -74,7 +84,7 @@
 :white_check_mark: | 1046 | [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | Easy | **PQ**, add all to it, take two from it each step.
 :white_check_mark: | 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | Medium | **DP** 0 matrix; if ch1=ch2 dp[-1][-1]+1, max(dp[-1][],dp[][-1]) otherwise.
 
-### Misc unnumbered Leetcode tasks
+### Misc unnumbered LeetCode tasks
 
 |   | Title | Difficulty (subjective) | Key & notes |
 | - | ----- | ----------------------- | ----------- |
