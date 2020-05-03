@@ -26,7 +26,8 @@
 :white_check_mark: | 15 | [3Sum](https://leetcode.com/problems/3sum) | Medium | Sort, set i1=0,i2=1,i3=length-1, fix i1, find sum of the rest two complement to fixed.
 :white_check_mark: | 16 | [3Sum Closet](https://leetcode.com/problems/3sum-closest) | Medium | Sort, set i1=0,i2=1,i3=length-1, fix i1, find sum of the rest two as min closest.
 :white_check_mark: | 18 | [4Sum](https://leetcode.com/problems/4sum) | Medium | Sort, set i1=0,i2=1,i3=2,i4=length-1, then for-while-while
-:white_check_mark: | 20 | [Valid Parenthesis](https://leetcode.com/problems/valid-parentheses) | Easy | Use Deque, peek & remove complement parenthesis.
+:white_check_mark: | 20 | [Valid Parenthesis](https://leetcode.com/problems/valid-parentheses) | Easy | Use **Deque**, peek & remove complement parenthesis.
+:white_check_mark: | 23 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | Add all items from all lists to min **PQ** first.
 |   | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Medium | 
 |   | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium | 
 :white_check_mark: | 33 | [Search Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Search rotation idx with manual binary search, then do Arrays.bS for both parts.
