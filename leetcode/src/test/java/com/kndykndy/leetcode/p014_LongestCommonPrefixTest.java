@@ -2,14 +2,14 @@ package com.kndykndy.leetcode;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.kndykndy.leetcode.p13_RomanToInteger.Solution;
-import com.kndykndy.leetcode.p13_RomanToInteger.Solution1;
+import com.kndykndy.leetcode.p014_LongestCommonPrefix.Solution;
+import com.kndykndy.leetcode.p014_LongestCommonPrefix.Solution1;
 import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class p13_RomanToIntegerTest {
+class p014_LongestCommonPrefixTest {
 
     private List<Solution> solutions;
 
@@ -21,10 +21,10 @@ class p13_RomanToIntegerTest {
     @Test
     void test1() {
         for (Solution solution : solutions) {
-            assertEquals(3, solution.romanToInt("III"));
-            assertEquals(4, solution.romanToInt("IV"));
-            assertEquals(9, solution.romanToInt("IX"));
-            assertEquals(58, solution.romanToInt("LVIII"));
+            assertEquals(
+                "fl",
+                solution.longestCommonPrefix(new String[]{"flower", "flow", "flight"}));
+            assertEquals("", solution.longestCommonPrefix(new String[]{"dog", "racecar", "car"}));
         }
     }
 }

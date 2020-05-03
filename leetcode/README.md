@@ -22,6 +22,7 @@
 |   | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard |
 :white_check_mark: | 11 | [Container with Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | Time O(n), space O(1): count max for: (j - i) * Math.min(height[i], height[j])
 :white_check_mark: | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | Go thru string, check for next symbol in extra cases.
+:white_check_mark: | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | Calc min word length first.
 :white_check_mark: | 15 | [3Sum](https://leetcode.com/problems/3sum) | Medium | Sort, set i1=0,i2=1,i3=length-1, fix i1, find sum of the rest two complement to fixed.
 :white_check_mark: | 16 | [3Sum Closet](https://leetcode.com/problems/3sum-closest) | Medium | Sort, set i1=0,i2=1,i3=length-1, fix i1, find sum of the rest two as min closest.
 :white_check_mark: | 18 | [4Sum](https://leetcode.com/problems/4sum) | Medium | Sort, set i1=0,i2=1,i3=2,i4=length-1, then for-while-while
