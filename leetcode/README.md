@@ -21,6 +21,7 @@
 :white_check_mark: | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Easy | % and /
 |   | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard |
 :white_check_mark: | 11 | [Container with Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | Time O(n), space O(1): count max for: (j - i) * Math.min(height[i], height[j])
+:white_check_mark: | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | Go thru string, check for next symbol in extra cases.
 :white_check_mark: | 15 | [3Sum](https://leetcode.com/problems/3sum) | Medium | Sort, set i1=0,i2=1,i3=length-1, fix i1, find sum of the rest two complement to fixed.
 :white_check_mark: | 16 | [3Sum Closet](https://leetcode.com/problems/3sum-closest) | Medium | Sort, set i1=0,i2=1,i3=length-1, fix i1, find sum of the rest two as min closest.
 :white_check_mark: | 18 | [4Sum](https://leetcode.com/problems/4sum) | Medium | Sort, set i1=0,i2=1,i3=2,i4=length-1, then for-while-while
@@ -52,6 +53,7 @@
 :white_check_mark: | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | Medium | Go thru str, cut words before a space and insert into a StringBuffer. 
 :white_check_mark: | 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | Easy | Keep two **deques**: data and min-stack.
 :white_check_mark: | 191 | [Number of 1 bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | Do n&=(n-1) while not 9.
+:white_check_mark: | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Eady| Actually Medium. **DP**. dp+1=max(dp,dp-1+numi).
 |   | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | Medium |
 :white_check_mark: | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium | Go thru matrix and if 1, waterize all around recursively.
 :white_check_mark: | 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | Medium | It's 0 if m=0 or m&n=0 or m/n leading zeros aren't equal immediately, else do & for all.
