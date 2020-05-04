@@ -68,10 +68,12 @@
 :white_check_mark: | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy | Keep ptr, increase it only when meet not zero, nullify rest at second pass.
 :white_check_mark: | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | A list with cycle problem actually. **Tortoise&Hare**.
 |   | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | **DP**
+:white_check_mark: | 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | **DP**. Hard actually. Read explanation in the solution.
 |   | 331 | [Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/) | Medium |
 :white_check_mark: | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | Use temp char and swap chars.
 |   | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium |
 |   | 435 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals) | Medium |
+:white_check_mark: | 518 | [Coin Change II](https://leetcode.com/problems/coin-change-2/) | Medium | **DP**. Hard actually. Read explanation in the solution.
 :white_check_mark: | 525 | [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | Medium | **Draw**! Keep map max-result to idx-of-that-result.
 :white_check_mark: | 541 | [Reverse String II](https://leetcode.com/problems/reverse-string-ii) | When should reverse, use helper to reverse from-to and use swap in it.
 :white_check_mark: | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy | From root: get sum of l/r heights, max of recursive diameter calls, take max of them.
