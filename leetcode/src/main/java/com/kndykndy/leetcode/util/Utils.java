@@ -1,5 +1,6 @@
 package com.kndykndy.leetcode.util;
 
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -16,6 +17,10 @@ public class Utils {
             }
             System.out.println();
         }
+    }
+
+    public static void printIntArray(int[] a, String postfix) {
+        System.out.println(Arrays.toString(a) + " " + postfix);
     }
 
     /**

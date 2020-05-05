@@ -1,5 +1,7 @@
 package com.kndykndy.leetcode;
 
+import static com.kndykndy.leetcode.util.Utils.printIntArray;
+
 public class p518_CoinChangeII {
 
     interface Solution {
@@ -64,10 +66,13 @@ public class p518_CoinChangeII {
             final int[] dp = new int[amount + 1];
             dp[0] = 1;
 
+            printIntArray(dp, "initial");
+
             for (int coin : coins) {
-                for (int j = coin; j < amount + 1; j++) {
-                    dp[j] += dp[j - coin];
+                for (int currentAmount = coin; currentAmount < amount + 1; currentAmount++) {
+                    dp[currentAmount] += dp[currentAmount - coin];
                 }
+                printIntArray(dp, "for coin " + coin);
             }
 
             return dp[amount];
