@@ -27,12 +27,13 @@
 :white_check_mark: | 16 | [3Sum Closet](https://leetcode.com/problems/3sum-closest) | Medium | Sort, set i1=0,i2=1,i3=length-1, fix i1, find sum of the rest two as min closest.
 :white_check_mark: | 17 | [Letter Combinations of a Phone number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | Medium | Use map of button to string of letters. Set indexes to 0, then iterate bottom-up.
 :white_check_mark: | 18 | [4Sum](https://leetcode.com/problems/4sum) | Medium | Sort, set i1=0,i2=1,i3=2,i4=length-1, then for-while-while
-
+:white_check_mark: | 19 | [Remove Nth Node from End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | Use two pointers (start second with null), remember head.
 :white_check_mark: | 20 | [Valid Parenthesis](https://leetcode.com/problems/valid-parentheses) | Easy | Use **Deque**, peek & remove complement parenthesis.
 :white_check_mark: | 23 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | Add all items from all lists to min **PQ** first.
 |   | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Medium | 
 |   | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium | 
 :white_check_mark: | 33 | [Search Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Search rotation idx with manual binary search, then do Arrays.bS for both parts.
+:white_check_mark: | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | Hard | **Read explanation in the solution.**
 :white_check_mark: | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard | **DP** boolean matrix. 0,0 true. If s=p||p=? then -1,-1. If * then -1,0||0,-1. Else false.
 :white_check_mark: | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Hard | **DP**. Take num[0] and recurse for it down to zero. Memoize ways to get to each pos.
 :white_check_mark: | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | Fix index and swap all other indexes.

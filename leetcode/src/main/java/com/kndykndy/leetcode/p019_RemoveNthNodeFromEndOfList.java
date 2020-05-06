@@ -2,7 +2,7 @@ package com.kndykndy.leetcode;
 
 import com.kndykndy.leetcode.util.ListNode;
 
-public class p017_RemoveNthNodeFromEndOfList {
+public class p019_RemoveNthNodeFromEndOfList {
 
     interface Solution {
 

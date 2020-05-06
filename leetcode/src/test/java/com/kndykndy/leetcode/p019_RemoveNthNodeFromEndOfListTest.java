@@ -2,15 +2,15 @@ package com.kndykndy.leetcode;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.kndykndy.leetcode.p017_RemoveNthNodeFromEndOfList.Solution;
-import com.kndykndy.leetcode.p017_RemoveNthNodeFromEndOfList.Solution1;
+import com.kndykndy.leetcode.p019_RemoveNthNodeFromEndOfList.Solution;
+import com.kndykndy.leetcode.p019_RemoveNthNodeFromEndOfList.Solution1;
 import com.kndykndy.leetcode.util.ListNode;
 import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class p017_RemoveNthNodeFromEndOfListTest {
+class p019_RemoveNthNodeFromEndOfListTest {
 
     private List<Solution> solutions;
 
