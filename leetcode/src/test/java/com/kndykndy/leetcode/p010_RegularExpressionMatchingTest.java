@@ -19,7 +19,33 @@ class p010_RegularExpressionMatchingTest {
     @Test
     void test1() {
         for (Solution solution : solutions) {
-            // todo
+           /*
+            * isMatch("aa","a") → false
+            * isMatch("aa","aa") → true
+            * isMatch("aaa","aa") → false
+            * isMatch("aa", "a*") → true
+            * isMatch("aa", ".*") → true
+            * isMatch("ab", ".*") → true
+            * isMatch("aab", "a*a*b") → true
+            *
+            *  ! isMatch("aa", "a");
+//    assert new Solution().isMatch("aa", "aa");
+//    assert !new Solution().isMatch("aaa", "aa");
+//    assert new Solution().isMatch("aa", "a*");
+    assert new Solution().isMatch("aa", ".*");
+//    assert new Solution().isMatch("ab", ".*");
+//    assert new Solution().isMatch("aab", "a*a*b");
+//
+//    assert new Solution().isMatch("aaaa", "a*a*");
+//    assert new Solution().isMatch("aaaa", "aaa*");
+//    assert new Solution().isMatch("aaaa", "aa*a");
+//    assert new Solution().isMatch("aaaa", "a*aa");
+//    assert new Solution().isMatch("aaaa", "a*a*a");
+//
+//    assert new Solution().isMatch("aaabbbccc", ".*.*..*");
+
+//    assert !new Solution().isMatch("", "");
+            */
         }
     }
 }

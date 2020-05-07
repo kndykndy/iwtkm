@@ -46,6 +46,7 @@
 |   | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | Medium | **DP**
 :white_check_mark: | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | Medium | Subvisit & memoize.
 |   | 67 | [Add Binary](https://leetcode.com/problems/add-binary) | Easy |
+:white_check_mark: | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | fib(n + 1) 
 |   | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium
 |   | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | Medium |
 |   | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium
@@ -75,6 +76,7 @@
 |   | 331 | [Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/) | Medium |
 :white_check_mark: | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | Use temp char and swap chars.
 |   | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium |
+:white_check_mark: | 387 | [First Unique Char in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | Easy | Use **LinkedHashMap**.
 |   | 435 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals) | Medium |
 :white_check_mark: | 518 | [Coin Change II](https://leetcode.com/problems/coin-change-2/) | Medium | **DP**. Hard actually. Read explanation in the solution.
 :white_check_mark: | 525 | [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | Medium | **Draw**! Keep map max-result to idx-of-that-result.
