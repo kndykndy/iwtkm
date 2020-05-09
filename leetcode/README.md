@@ -35,6 +35,7 @@
 |   | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium | 
 :white_check_mark: | 33 | [Search Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Search rotation idx with manual binary search, then do Arrays.bS for both parts.
 :white_check_mark: | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | Hard | **Read explanation in the solution.**
+ | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | 
 :white_check_mark: | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard | **DP** boolean matrix. 0,0 true. If s=p||p=? then -1,-1. If * then -1,0||0,-1. Else false.
 :white_check_mark: | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Hard | **DP**. Take num[0] and recurse for it down to zero. Memoize ways to get to each pos.
 :white_check_mark: | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | Fix index and swap all other indexes.
@@ -103,5 +104,6 @@
 | :white_check_mark: | [Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/532/week-5/3315/) | Hard | **BFS** with subsearch if nodes are equal.
 | :white_check_mark: | [Counting Elements (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/) | Easy | Add all items to **set**, do second pass.
 | :white_check_mark: | [First Unique Number (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/531/week-4/3313/) | Medium | Keep two **sets**: repeated and unique or single LinkedHashMap
+| :white_check_mark: | [Game of Battleships](https://leetcode.com/discuss/interview-question/538068/) | Easy | Parse, build ships, shoot, get statistics.
 | :white_check_mark: | [Leftmost Column with at Least a One (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/530/week-3/3306/) | Medium | Start from top-right, if 1 go left, if 0 go down.
 | :white_check_mark: | [Perform String Shifts (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3299/) | Medium | Calculate shift and then do rotation.
