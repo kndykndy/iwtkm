@@ -32,6 +32,9 @@
 :white_check_mark: | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Choose min of two head, append to new list.
 :white_check_mark: | 23 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | Add all items from all lists to min **PQ** first.
 |   | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Medium | 
+:white_check_mark: | 26 | [Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | Introduce idx, increase it & rewrite when num[i] not equal to num[idx].
+:white_check_mark: | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | Introduce idx, increase it & rewrite when not equal to val.
+:white_check_mark: | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | Easy | When chars are equal, iterate both then check for full inclusion, otherwise decrease i1 by coincided amount of chars + 1.    
 |   | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium | 
 :white_check_mark: | 33 | [Search Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Search rotation idx with manual binary search, then do Arrays.bS for both parts.
 :white_check_mark: | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | Hard | **Read explanation in the solution.**
@@ -55,7 +58,7 @@
 :white_check_mark: | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | Medium | 
 |   | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium |
 :white_check_mark: | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Easy | **Draw**! Sum if next is bigger than prev.
-:white_check_mark: | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/submissions/) | Hard | Recurse then memoize max sum and return from recursion.
+:white_check_mark: | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | Hard | Recurse then memoize max sum and return from recursion.
 :white_check_mark: | 136 | [Simple Number](https://leetcode.com/problems/single-number/) | Easy | O(n) with a set. O(n) XOR all values.
 :white_check_mark: | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | Use **deque** for recent usage and map.
 :white_check_mark: | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | Medium | Go thru str, cut words before a space and insert into a StringBuffer. 
