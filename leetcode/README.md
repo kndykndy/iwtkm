@@ -21,6 +21,7 @@
 :white_check_mark: | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Easy | % and /
 |   | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard |
 :white_check_mark: | 11 | [Container with Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | Time O(n), space O(1): count max for: (j - i) * Math.min(height[i], height[j])
+|   | 12 | []() | 
 :white_check_mark: | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | Go thru string, check for next symbol in extra cases.
 :white_check_mark: | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | Calc min word length first.
 :white_check_mark: | 15 | [3Sum](https://leetcode.com/problems/3sum) | Medium | Sort, set i1=0,i2=1,i3=length-1, fix i1, find sum of the rest two complement to fixed.
@@ -30,15 +31,17 @@
 :white_check_mark: | 19 | [Remove Nth Node from End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | Use two pointers (start second with null), remember head.
 :white_check_mark: | 20 | [Valid Parenthesis](https://leetcode.com/problems/valid-parentheses) | Easy | Use **Deque**, peek & remove complement parenthesis.
 :white_check_mark: | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Choose min of two head, append to new list.
+|   | 22 | []() | 
 :white_check_mark: | 23 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | Add all items from all lists to min **PQ** first.
-|   | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Medium | 
+|   | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Medium |
+|   | 25 | []() |  
 :white_check_mark: | 26 | [Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | Introduce idx, increase it & rewrite when num[i] not equal to num[idx].
 :white_check_mark: | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | Introduce idx, increase it & rewrite when not equal to val.
 :white_check_mark: | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | Easy | When chars are equal, iterate both then check for full inclusion, otherwise decrease i1 by coincided amount of chars + 1.    
 |   | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium | 
 :white_check_mark: | 33 | [Search Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Search rotation idx with manual binary search, then do Arrays.bS for both parts.
 :white_check_mark: | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | Hard | **Read explanation in the solution.**
- | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | 
+|   | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | 
 :white_check_mark: | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard | **DP** boolean matrix. 0,0 true. If s=p||p=? then -1,-1. If * then -1,0||0,-1. Else false.
 :white_check_mark: | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Hard | **DP**. Take num[0] and recurse for it down to zero. Memoize ways to get to each pos.
 :white_check_mark: | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | Fix index and swap all other indexes.
@@ -114,3 +117,4 @@
 | :white_check_mark: | [Load Balancer](https://leetcode.com/discuss/interview-question/506287/) | Medium | Setup three groups, enlarge leftmost and rightmost, check if equal. 
 | :white_check_mark: | [Multiply Two Numbers Without Using Multiplication](https://leetcode.com/discuss/interview-question/532188/Microsoft-or-Phone-or-Multiply-two-numbers-without-using-multiplication) | Easy | Remember sign, sum up until k<min(a,b).  
 | :white_check_mark: | [Perform String Shifts (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3299/) | Medium | Calculate shift and then do rotation.
+| :white_check_mark: | Revert Phrase and Drop Word Last Letters | Medium | Create SB. Remember word lengths, while reverting go thru length-1. Insert at 0.
