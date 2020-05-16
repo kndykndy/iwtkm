@@ -118,3 +118,9 @@
 | :white_check_mark: | [Multiply Two Numbers Without Using Multiplication](https://leetcode.com/discuss/interview-question/532188/Microsoft-or-Phone-or-Multiply-two-numbers-without-using-multiplication) | Easy | Remember sign, sum up until k<min(a,b).  
 | :white_check_mark: | [Perform String Shifts (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3299/) | Medium | Calculate shift and then do rotation.
 | :white_check_mark: | Revert Phrase and Drop Word Last Letters | Medium | Create SB. Remember word lengths, while reverting go thru length-1. Insert at 0.
+
+### Misc LeetCode-related or similar tasks (misc subfolder)
+
+|   | Title | Difficulty (subjective) | Key & notes |
+| - | ----- | ----------------------- | ----------- |
+| :white_check_mark: | [Word Count](./src/main/java/com/kndykndy/leetcode/misc/wordcount) | Medium | Two-part task, involving parallel computing.
