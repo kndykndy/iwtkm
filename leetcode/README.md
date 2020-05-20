@@ -124,6 +124,7 @@
 | :white_check_mark: | [Counting Elements (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/) | Easy | Add all items to **set**, do second pass.
 | :white_check_mark: | [Find First Non-Repeating Character](https://leetcode.com/discuss/interview-question/125015/first-non-repeating-character-in-a-string) | Easy | Use **LHM** for frequencies, merge all to it then get first.
 | :white_check_mark: | Find First Repeating Character | Easy | Use **LHM** for frequencies, merge all to it then get first.
+| :white_check_mark: | Find Last Non Repeating Character | Easy | Apprach same as in Find First Non-Repeating Character.
 | :white_check_mark: | [First Unique Number (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/531/week-4/3313/) | Medium | Keep two **sets**: repeated and unique or single LinkedHashMap
 | :white_check_mark: | [Game of Battleships](https://leetcode.com/discuss/interview-question/538068/) | Medium | Parse, build ships, shoot, get statistics.
 | :white_check_mark: | [Leftmost Column with at Least a One (Challenge)](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/530/week-3/3306/) | Medium | Start from top-right, if 1 go left, if 0 go down.
