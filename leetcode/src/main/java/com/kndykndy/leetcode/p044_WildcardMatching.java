@@ -17,18 +17,18 @@ public class p044_WildcardMatching {
                 return false;
             }
 
-            final int slen = s.length(), plen = p.length();
+            final int sLen = s.length(), pLen = p.length();
             char pchar;
 
-            final boolean[][] m = new boolean[slen + 1][plen + 1];
+            final boolean[][] m = new boolean[sLen + 1][pLen + 1];
             m[0][0] = true;
             int k = 0;
-            while (k < plen && p.charAt(k) == '*') {
+            while (k < pLen && p.charAt(k) == '*') {
                 m[0][k++ + 1] = true;
             }
 
-            for (int i = 1; i < slen + 1; i++) {
-                for (int j = 1; j < plen + 1; j++) {
+            for (int i = 1; i < sLen + 1; i++) {
+                for (int j = 1; j < pLen + 1; j++) {
                     pchar = p.charAt(j - 1);
                     if (pchar == s.charAt(i - 1) || pchar == '?') {
                         m[i][j] = m[i - 1][j - 1];
@@ -39,9 +39,10 @@ public class p044_WildcardMatching {
                     }
                 }
             }
+            System.out.println("s: \"" + s + "\", p: \"" + p + "\"");
             Utils.printBooleanMatrix(m);
 
-            return m[slen][plen];
+            return m[sLen][pLen];
         }
     }
 }

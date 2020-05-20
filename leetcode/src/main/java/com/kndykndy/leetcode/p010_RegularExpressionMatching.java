@@ -1,5 +1,7 @@
 package com.kndykndy.leetcode;
 
+import com.kndykndy.leetcode.util.Utils;
+
 public class p010_RegularExpressionMatching {
 
     interface Solution {
@@ -57,6 +59,8 @@ public class p010_RegularExpressionMatching {
                     }
                 }
             }
+            System.out.println("s: \"" + s + "\", p: \"" + p + "\"");
+            Utils.printBooleanMatrix(m);
 
             return m[sLen][pLen];
         }
