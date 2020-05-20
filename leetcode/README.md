@@ -19,7 +19,7 @@
 :white_check_mark: | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | Easy | % and /
 :white_check_mark: | 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | Medium | Get numbers as str.charAt(i) - '0'
 :white_check_mark: | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Easy | % and /
-|   | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard |
+:white_check_mark: | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard | **DP** boolean matrix. [0;0] true. For first row take if p=* take [0;j-2]. If s=p||p=. take [i-1;j-1]. If * then [i;j-2], but if p-1=s||p-1=. this || [i-1;j]. Otherwise false.
 :white_check_mark: | 11 | [Container with Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | Time O(n), space O(1): count max for: (j - i) * Math.min(height[i], height[j])
 |   | 12 | []() | 
 :white_check_mark: | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | Go thru string, check for next symbol in extra cases.
@@ -38,15 +38,28 @@
 :white_check_mark: | 26 | [Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | Introduce idx, increase it & rewrite when num[i] not equal to num[idx].
 :white_check_mark: | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | Introduce idx, increase it & rewrite when not equal to val.
 :white_check_mark: | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | Easy | When chars are equal, iterate both then check for full inclusion, otherwise decrease i1 by coincided amount of chars + 1.    
-|   | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium | 
+|   | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium |
+|   | 30 | []() |  
+|   | 31 | []() |  
+|   | 32 | []() |   
 :white_check_mark: | 33 | [Search Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Search rotation idx with manual binary search, then do Arrays.bS for both parts.
+|   | 34 | []() |  
+|   | 35 | []() |  
+|   | 36 | []() |  
+|   | 37 | []() |  
+|   | 38 | []() |  
+|   | 39 | []() |  
+|   | 40 | []() |  
 :white_check_mark: | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | Hard | **Read explanation in the solution.**
-|   | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | 
-:white_check_mark: | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard | **DP** boolean matrix. 0,0 true. If s=p||p=? then -1,-1. If * then -1,0||0,-1. Else false.
+|   | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard |
+|   | 43 | []() |   
+:white_check_mark: | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard | **DP** boolean matrix. [0;0] true. For first row if p=* take [0;j-2]. If s=p||p=? then take [i-1;j-1]. If p=* then [i-1;j]||[i;j-1]. Otherwise false.
 :white_check_mark: | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Hard | **DP**. Take num[0] and recurse for it down to zero. Memoize ways to get to each pos.
 :white_check_mark: | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | Fix index and swap all other indexes.
 :white_check_mark: | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | Medium | Fix index and swap all other indexes, if they are not equal to a fixed one.
-:white_check_mark: | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | Convert each str to char array and then add to map as key. 
+|   | 48 | []() |
+:white_check_mark: | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | Convert each str to char array and then add to map as key.
+|   | 50 | []() | 
 :white_check_mark: | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Easy | **Kadane**'s algorithm.
 |   | 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | Medium |
 |   | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium |
