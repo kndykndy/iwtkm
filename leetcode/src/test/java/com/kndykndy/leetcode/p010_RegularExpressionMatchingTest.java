@@ -1,7 +1,10 @@
 package com.kndykndy.leetcode;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import com.kndykndy.leetcode.p010_RegularExpressionMatching.OptimalSolution;
 import com.kndykndy.leetcode.p010_RegularExpressionMatching.Solution;
-import com.kndykndy.leetcode.p010_RegularExpressionMatching.Solution1;
 import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,39 +16,28 @@ class p010_RegularExpressionMatchingTest {
 
     @BeforeEach
     void setUp() {
-        solutions = Collections.singletonList(new Solution1());
+        solutions = Collections.singletonList(new OptimalSolution());
     }
 
     @Test
     void test1() {
         for (Solution solution : solutions) {
-           /*
-            * isMatch("aa","a") → false
-            * isMatch("aa","aa") → true
-            * isMatch("aaa","aa") → false
-            * isMatch("aa", "a*") → true
-            * isMatch("aa", ".*") → true
-            * isMatch("ab", ".*") → true
-            * isMatch("aab", "a*a*b") → true
-            *
-            *  ! isMatch("aa", "a");
-//    assert new Solution().isMatch("aa", "aa");
-//    assert !new Solution().isMatch("aaa", "aa");
-//    assert new Solution().isMatch("aa", "a*");
-    assert new Solution().isMatch("aa", ".*");
-//    assert new Solution().isMatch("ab", ".*");
-//    assert new Solution().isMatch("aab", "a*a*b");
-//
-//    assert new Solution().isMatch("aaaa", "a*a*");
-//    assert new Solution().isMatch("aaaa", "aaa*");
-//    assert new Solution().isMatch("aaaa", "aa*a");
-//    assert new Solution().isMatch("aaaa", "a*aa");
-//    assert new Solution().isMatch("aaaa", "a*a*a");
-//
-//    assert new Solution().isMatch("aaabbbccc", ".*.*..*");
+            assertTrue(solution.isMatch("", ""));
+            assertTrue(solution.isMatch("aa", "aa"));
+            assertTrue(solution.isMatch("aa", "a*"));
+            assertTrue(solution.isMatch("aa", ".*"));
+            assertTrue(solution.isMatch("ab", ".*"));
+            assertTrue(solution.isMatch("aab", "a*a*b"));
+            assertTrue(solution.isMatch("aabbcd", "a*b.cd"));
+            assertTrue(solution.isMatch("aaaa", "a*a*"));
+            assertTrue(solution.isMatch("aaaa", "aaa*"));
+            assertTrue(solution.isMatch("aaaa", "aa*a"));
+            assertTrue(solution.isMatch("aaaa", "a*aa"));
+            assertTrue(solution.isMatch("aaaa", "a*a*a"));
+            assertTrue(solution.isMatch("aaabbbccc", ".*.*..*"));
 
-//    assert !new Solution().isMatch("", "");
-            */
+            assertFalse(solution.isMatch("aa", "a"));
+            assertFalse(solution.isMatch("aaa", "aa"));
         }
     }
 }
