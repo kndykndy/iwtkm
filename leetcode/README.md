@@ -107,7 +107,8 @@
 :white_check_mark: | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium | O(n^2) simple folded FORs. O(n) map conseq-sum to its-occurrence, getOrDefault+merge.
 |   | 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Medium |
 |   | 572 | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | Easy |
-:white_check_mark: | 678 | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/solution/) | Medium | Do both left-to-right and right-to-left passes, check for extra parenthesis.
+:white_check_mark: | 678 | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/) | Medium | Do both left-to-right and right-to-left passes, check for an extra parenthesis.
+:white_check_mark: | 822 | [Card Flipping Game](https://leetcode.com/problems/card-flipping-game/) | Medium | Weird description. Add all equal to HS, then for both fronts and back if not int set, get min.
 |   | 829 | [Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/) | Hard |
 |   | 836 | [Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | Easy | 
 :white_check_mark: | 844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | Easy | Keep two idxs: if encounter #, first while++ it's still #, then while-- if not.
