@@ -6,3 +6,4 @@ A storage for technological research activities:
 * [coreservlets.com - Java8 streams course](./course-coreservlets-java8-streams)
 * [Coursera - Scala specialization](./course-coursera-scala-specialization)
 * [javabrains.io - Spring AOP course](./course-javabrainsio-spring-aop)
+* [javabrains.io - Spring Data course](./course-javabrainsio-spring-data)
