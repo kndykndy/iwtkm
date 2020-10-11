@@ -9,3 +9,4 @@ A storage for technological research activities:
 * [javabrains.io - Spring Data course](./course-javabrainsio-spring-data)
 * [Udemy - Spring Hibernate for beginners course](./course-udemy-spring-hibernate)
 * [Restaurants DEMO](./demo-restaurants)
+* [Book Administration DEMO](./demo-book-administration)
