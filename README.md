@@ -7,4 +7,4 @@ A storage for technological research activities:
 * [Coursera - Scala specialization](./course-coursera-scala-specialization)
 * [javabrains.io - Spring AOP course](./course-javabrainsio-spring-aop)
 * [javabrains.io - Spring Data course](./course-javabrainsio-spring-data)
-* [Udemy - Spring Hibernate for bebinners course](./course-udemy-spring-hibernate)
+* [Udemy - Spring Hibernate for beginners course](./course-udemy-spring-hibernate)
