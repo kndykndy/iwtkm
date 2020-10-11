@@ -1,0 +1,18 @@
+# Common
+*.class
+*.log
+
+# SBT
+target/
+
+# Coursers
+assignment.sbt
+build.sbt
+scalastyle_config.xml
+project/
+
+# Intellij IDEA
+.idea/
+
+# Misc
+.DS_Store
