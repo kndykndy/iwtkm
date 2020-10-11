@@ -8,3 +8,4 @@ A storage for technological research activities:
 * [javabrains.io - Spring AOP course](./course-javabrainsio-spring-aop)
 * [javabrains.io - Spring Data course](./course-javabrainsio-spring-data)
 * [Udemy - Spring Hibernate for beginners course](./course-udemy-spring-hibernate)
+* [Restaurants DEMO](./demo-restaurants)

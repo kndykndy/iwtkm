@@ -1,0 +1,26 @@
+# Common Java
+*.class
+
+# Intellij IDEA
+.idea/**
+out/**
+target/**
+*.iml
+*.iws
+*.ids
+*.ipr
+*.pid
+
+# Gradle
+.gradle/**
+gradle/**
+build/**
+gradlew
+gradlew.bat
+logs/
+
+# Misc
+*.log
+*.lst
+.DS_Store
+*.db
