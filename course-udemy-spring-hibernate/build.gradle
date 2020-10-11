@@ -1,0 +1,54 @@
+group 'iwtkm.season1.iwtkm03'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+/*
+* todo Create fast deployable project:
+* - Within IDEA add Tomcat configuration, clear its Before launch tasks list and populate it with
+* a) gradle clean task, b) gradle build task, c) gradle explodedWar task (further)
+* - Add the further*_war_exploded package to configuration' Deployment tab
+* */
+
+task explodedWar(type: Sync) {
+    // todo add this folder as a deploy source in IDE
+    into "${buildDir}/${project.name}_war_exploded"
+    with war
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.0'
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+    compile group: 'org.springframework', name: 'spring-context', version: '5.0.3.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-context-support
+    compile group: 'org.springframework', name: 'spring-context-support', version: '5.0.3.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '5.0.3.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.13.Final'
+    // https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator
+    compile group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.0.7.Final'
+
+    // https://mvnrepository.com/artifact/org.apache.derby/derby
+    testCompile group: 'org.apache.derby', name: 'derby', version: '10.14.1.0'
+    // https://mvnrepository.com/artifact/org.apache.derby/derbyclient
+    compile group: 'org.apache.derby', name: 'derbyclient', version: '10.14.1.0'
+
+    // https://mvnrepository.com/artifact/org.freemarker/freemarker
+    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.26-incubating'
+
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    compile group: 'com.google.guava', name: 'guava', version: '24.0-jre'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
