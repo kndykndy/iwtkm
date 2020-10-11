@@ -1,4 +1,4 @@
-# Java8 streams Coreservlets course
+# coreservlets.com - Java8 streams course
 
 Course origin
 http://www.coreservlets.com/java-8-tutorial/
