@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:aop="http://www.springframework.org/schema/aop"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+  http://www.springframework.org/schema/aop
+  http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+  <!-- The headers for this file are taken from
+  https://github.com/spring-projects/spring-framework/blob/master/spring-aop/src/test/resources/org/springframework/aop/config/AopNamespaceHandlerEventTests-context.xml -->
+
+  <aop:aspectj-autoproxy/>
+
+  <bean id="motor" class="iwtkm.season1.parts.Motor">
+    <property name="name" value="das motor"/>
+  </bean>
+
+  <bean id="steeringWheel" class="iwtkm.season1.parts.SteeringWheel">
+    <property name="name" value="das steering wheelung"/>
+  </bean>
+
+  <bean id="backMirror" class="iwtkm.season1.parts.BackMirror">
+    <property name="name" value="dem backung mirrorung"/>
+  </bean>
+
+  <bean id="engine" class="iwtkm.season1.parts.Engine"/>
+
+  <bean id="windShield" class="iwtkm.season1.parts.WindShield"/>
+
+  <bean id="partsService" class="iwtkm.season1.service.PartsService" autowire="byName"/>
+
+  <bean class="iwtkm.season1.aspects.LoggingAspect"/>
+  <bean class="iwtkm.season1.aspects.EnhancedLoggingAspect"/>
+  <bean id="aroundLoggingAspect" class="iwtkm.season1.aspects.AroundLoggingAspect"/>
+
+  <aop:config>
+    <aop:aspect ref="aroundLoggingAspect">
+      <aop:pointcut id="loggableAnnotationPointcut"
+        expression="@annotation(iwtkm.season1.aspects.Loggable)"/>
+      <aop:around pointcut-ref="loggableAnnotationPointcut"
+        method="logWindShieldSecondSingleMethodAround"/>
+    </aop:aspect>
+  </aop:config>
+
+</beans>
