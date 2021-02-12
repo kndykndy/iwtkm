@@ -57,8 +57,16 @@ It is Global service, you do not specify a region when using it. IAM users and g
 - programmatically via CLI
 - programmatically via SDK
 
-## Access rules
+## Access details
 
 Root account is the email address used to create an AWS account. It should not be shared with
 anyone. Instead, a user for each individual within an org should be created. Root account must be
 protected with 2FA.
+
+Group:
+
+- is a common way to aggregate users
+- user in a group inherit all permissions from a group
+- e.g. groups: developers, system administrators, HR, etc.
+
+To set permissions for a group, you need to apply a JSON-based policy to it.
