@@ -35,7 +35,7 @@ How to choose right AWS Region?
 - latency to end users - do not provision your cloud in Tokyo if most of your customers are in US
 - services availability - e.g. Glacier was not available in Singapore, MSK in Frankfurt
 
-## AWS client support packages
+## 4 client support packages
 
 - basic - free
 - developer - 29USD/month, scales based on usage
@@ -47,17 +47,11 @@ How to choose right AWS Region?
 **Billing Alerts/Alarms** will warn you automatically when a given level of AWS spend is reached, so
 you won't pay money without realising it.
 
-## Identity & Access Management - IAM
-
-It is Global service, you do not specify a region when using it. IAM users and groups are GLOBAL.
-
 ## Accessing AWS
 
-- visually via AWS Console in browser
+- visually via AWS Console in a browser
 - programmatically via CLI
 - programmatically via SDK
-
-## Access details
 
 Root account is the email address used to create an AWS account. It should not be shared with
 anyone. Instead, a user for each individual within an org should be created. Root account must be
