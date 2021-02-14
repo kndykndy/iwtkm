@@ -42,25 +42,10 @@ How to choose right AWS Region?
 - business - 100USD/month, scales based on usage
 - enterprise - 15K USD, a dedicated Technical Account Manager is assigned
 
-## Billing
+## Billing alarms
+
+BA are set up in AWS CloudWatch.
 
 **Billing Alerts/Alarms** will warn you automatically when a given level of AWS spend is reached, so
 you won't pay money without realising it.
 
-## Accessing AWS
-
-- visually via AWS Console in a browser
-- programmatically via CLI
-- programmatically via SDK
-
-Root account is the email address used to create an AWS account. It should not be shared with
-anyone. Instead, a user for each individual within an org should be created. Root account must be
-protected with 2FA.
-
-Group:
-
-- is a common way to aggregate users
-- user in a group inherit all permissions from a group
-- e.g. groups: developers, system administrators, HR, etc.
-
-To set permissions for a group, you need to apply a JSON-based policy to it.
