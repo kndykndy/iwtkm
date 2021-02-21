@@ -45,7 +45,7 @@ A report, listing all users in your account, including information:
 
 - about user pwds: when created, last used, last changed, should be changed next time
 - about access keys: is active, last used, last rotated, last service was used with
-- MFS: was enabled
+- MFA: was enabled
 
 ## HOW-TOs
 
@@ -76,6 +76,6 @@ A report, listing all users in your account, including information:
 - Options column: Account Settings
 - click Set password policy (for all users in our account)
 
-### How to generate a IAM Credential Report?
+### How to generate an IAM Credential Report?
 
 - Options column: Credential Report, Download

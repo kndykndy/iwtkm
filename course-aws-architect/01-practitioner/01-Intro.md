@@ -23,9 +23,9 @@
 
 ## Region/Availability zone/Edge location
 
-**Region** - physical location in the world, consisting of 2+ AZs.
+**Region** - physical location in the world, consisting of 2+ AZs.  
 **Availability zone** - 1+ discrete data centers, with redundant power, network and connectivity,
-house in separate facilities.
+house in separate facilities.  
 **Edge location** - endpoints for AWS used for caching contents. Typically, it consists of
 CloudFront, Amazon's CDN.
 
@@ -48,4 +48,3 @@ BA are set up in AWS CloudWatch.
 
 **Billing Alerts/Alarms** will warn you automatically when a given level of AWS spend is reached, so
 you won't pay money without realising it.
-
