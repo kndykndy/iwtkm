@@ -15,11 +15,8 @@ IAM manages:
 
 **User** is an end user, e.g. employees of an org, etc.
 
-**Group** is:
-
-- is a common way to aggregate users
-- user in a group inherit all permissions from a group
-- e.g. groups: developers, system administrators, HR, etc.
+**Group** is a common way to aggregate users. User in a group inherit all permissions from a group.
+Groups e.g.: developers, system administrators, HR, etc.
 
 IAM' users and groups are GLOBAL.
 
@@ -38,9 +35,17 @@ To use ports you need to explicitly open them.
 - programmatically via CLI
 - programmatically via SDK
 
-Root account is the email address used to create an AWS account. It should not be shared with
+**Root account** is the email address used to create an AWS account. It should not be shared with
 anyone. Instead, a user for each individual within an org should be created. Root account must be
 protected with 2FA (IAM Dashboard).
+
+## IAM Credential Report
+
+A report, listing all users in your account, including information:
+
+- about user pwds: when created, last used, last changed, should be changed next time
+- about access keys: is active, last used, last rotated, last service was used with
+- MFS: was enabled
 
 ## HOW-TOs
 
@@ -48,11 +53,12 @@ protected with 2FA (IAM Dashboard).
 
 - go to and read free tier spec: https://aws.amazon.com/free/
 - click Create a Free Account
-- go thru a wizard, choose Basic support plan, log in a new acc 
+- go thru a wizard, choose Basic support plan, log in a new acc
 
 ### How to activate MFA?
 
 - go to Services - Security, Identity & Compliance - IAM
+- notice, how region changes to Global!
 - (on IAM Dashboard) click Enable MFA
 - click Activate MFA, select Virtual MFA Device
 - generate QR code
@@ -69,3 +75,7 @@ protected with 2FA (IAM Dashboard).
   console), either download a .csv file or click Send email
 - Options column: Account Settings
 - click Set password policy (for all users in our account)
+
+### How to generate a IAM Credential Report?
+
+- Options column: Credential Report, Download
