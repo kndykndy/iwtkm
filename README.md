@@ -19,7 +19,11 @@ A storage for technological research activities.
 * [javabrains.io - Spring Data course](./course-javabrainsio-spring-data)
 * [Udemy - Spring Hibernate for beginners course](./course-udemy-spring-hibernate)
 
-### Misc demos
+### Books
+
+* [The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change](./books/the-managers-path.md) by **Camille Fournier**, 2017.
+
+### Demos
 
 * [Book Administration DEMO](./demo-book-administration)
 * [Restaurants DEMO](./demo-restaurants)
